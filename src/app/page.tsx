@@ -31,7 +31,7 @@ export default async function Home() {
     </section>
 
     <div className="cta-section">
-        <p>Your hard work matters. Let's build something amazing together!</p><br></br>
+        <p>Your hard work matters. Let &apos s build something amazing together!</p><br></br>
         <a href="/add" className="cta-button">Join Our Team</a>
     </div>
     </>

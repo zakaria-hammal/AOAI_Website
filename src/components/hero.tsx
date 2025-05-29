@@ -7,7 +7,7 @@ export function Hero() {
             <div className="about-grid">
                 <div className="about-card">
                     <h3>AOAI Mission</h3>
-                    <p>IOAI's mission is to inspire and engage young people in science, with a focus on AI. We aim to provide a platform for the world's top AI students, selected through fair national competitions, to compete, exchange ideas, and build connections. Our goal is to foster a global dialogue on AI's opportunities and ethical challenges, involving both students and the broader community.</p>
+                    <p>IOAI &apos s mission is to inspire and engage young people in science, with a focus on AI. We aim to provide a platform for the world &apos s top AI students, selected through fair national competitions, to compete, exchange ideas, and build connections. Our goal is to foster a global dialogue on AI &apos s opportunities and ethical challenges, involving both students and the broader community.</p>
                 </div>
             </div>
 
