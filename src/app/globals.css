@@ -851,28 +851,7 @@ main {
 /* ===================== */
 @media (max-width: 768px) {
   .aoai-nav {
-    font-size: 1rem;
-    padding: 1rem;
-  }
-
-  .nav-container {
-    flex-wrap: wrap;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-list {
     display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .nav-list.active {
-    display: flex;
   }
 
   .title-container {
@@ -990,7 +969,7 @@ main {
   }
 
   
-.ambassador-card {
+  .ambassador-card {
     height: auto;
     perspective: none;
   }
@@ -1016,6 +995,35 @@ main {
   
   .ambassador-card:hover .ambassador-image-container {
     transform: none;
+  }
+
+  .benefits-grid {
+    gap: 2rem;
+    flex-direction: column;
+  }
+    
+  .benefit-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 100%;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: rgba(5, 207, 207, 0.05);
+    border-radius: var(--radius);
+  }
+    
+  .benefit-icon-container {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+  }
+    
+  .benefit-text {
+    text-align: left;
+    max-width: none;
+    font-size: 1rem;
   }
 }
 
