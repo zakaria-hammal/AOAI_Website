@@ -14,7 +14,7 @@ export function Ambassadors() {
       id: 1,
       name: "Meouane Debah",
       role: "AI Researcher",
-      university: "University of Algiers",
+      university: "Khalifa University",
       image: "/merouane-debah.jpg"
     }
   ];
