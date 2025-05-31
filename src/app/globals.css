@@ -707,7 +707,6 @@ main {
   border-radius: 2px;
 }
 
-
 .coach-role {
   color: #0C83FF;
   font-weight: 600;
@@ -966,7 +965,6 @@ main {
     margin-bottom: 1.5rem;
   }
 
-  /* Coaches */
   .coaches-grid {
     flex-direction: column;
     gap: 2rem;
@@ -977,11 +975,9 @@ main {
   }
 
   .coach-image {
-    width: 120px;
-    height: 120px;
+    border-radius: 50%;
   }
 
-  /* Ambassadors */
   .ambassador-card {
     height: 250px;
   }
