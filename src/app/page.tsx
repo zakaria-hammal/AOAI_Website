@@ -4,16 +4,16 @@ import { Coaches } from "@/components/coaches";
 import { Sponsors } from "@/components/sponsors";
 import { Hero } from "@/components/hero";
 import { Title } from "@/components/title";
+import { Ambassadors } from "@/components/ambassadors";
+import { Footer } from "@/components/footer";
 
 export default async function Home() {
   return (
     <>
     <Nav/>
     <main>
-    <section>
-        <Title />
-    </section>
-    <section id="home">
+    <Title />
+    <section id="about">
         <Hero />
     </section>
 
@@ -25,14 +25,15 @@ export default async function Home() {
         <Coaches />
     </section>
 
+    <section id="ambassadors">
+        <Ambassadors />
+    </section>
+
     <section id="sponsors">
         <Sponsors />
     </section>
 
-    <div className="cta-section">
-        <p>Your hard work matters. Let&apos;build something amazing together!</p><br></br>
-        <a href="/add" className="cta-button">Join Our Team</a>
-    </div>
+    <Footer />
 
     </main>
 

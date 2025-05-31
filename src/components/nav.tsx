@@ -22,9 +22,9 @@ export function Nav() {
                 <ul className="nav-list">
                     <li><Link href="#about" className="nav-link">About</Link></li>
                     <li><Link href="#events" className="nav-link">Events</Link></li>
-                    <li><Link href="#ambassadors" className="nav-link">Ambassadors</Link></li>
                     <li><Link href="#coaches" className="nav-link">Coaches</Link></li>
-                    <li><Link href="#sponsors" className="nav-link">Sponsors</Link></li>
+                    <li><Link href="#ambassadors" className="nav-link">Ambassadors</Link></li>
+                   <li><Link href="#sponsors" className="nav-link">Sponsors</Link></li>
                 </ul>
             </div>
         </div>

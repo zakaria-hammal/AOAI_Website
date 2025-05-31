@@ -10,28 +10,34 @@ interface Coach {
 export function Coaches() {
   const coaches: Coach[] = [
     {
-      name: "Drici Mohammed Hachem",
-      role: "Head Coach",
-      bio: "Student in University of El oued",
-      image: "/hachem.webp"
+        name: "Drici Mohammed Hachem",
+        role: "Head Coach",
+        bio: "Student in University of El oued",
+        image: "/hachem.webp"
     },
     {
-      name: "Ilyes Mohammed",
-      role: "Computer vision researcher",
-      bio: "College proffessor",
-      image: "/coach2.jpg"
+        name: "Ilyes Mohammed",
+        role: "Computer vision researcher",
+        bio: "College proffessor",
+        image: "/coach2.jpg"
     },
     {
-      name: "Raouf Ould Ali",
-      role: "Nice guy",
-      bio: "AI student in ENSIA",
-      image: "/coach3.jpg"
+        name: "Raouf Ould Ali",
+        role: "Nice guy",
+        bio: "AI student in ENSIA",
+        image: "/coach3.jpg"
+    },
+    {
+        name: "Zakaria HAMMAL",
+        role: "Also a Nice guy",
+        bio: "Student in USTHB",
+        image: "/coach3.jpg" 
     }
   ];
 
   return (
-    <section className="coaches-section">
-      <div className="container">
+    <>
+      <div className="coach-container">
         <div className="section-header">
           <h2 className="section-title">Our Expert Coaches</h2>
           <p className="section-subtitle">Learn from the best minds in Algerian AI</p>
@@ -58,6 +64,6 @@ export function Coaches() {
           ))}
         </div>
       </div>
-    </section>
+    </>
   );
 }

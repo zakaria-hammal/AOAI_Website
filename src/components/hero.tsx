@@ -11,6 +11,7 @@ export function Hero() {
             <div className="hero-join">
                 <h2 className="section-title">Why join?</h2>
                 <div className="benefits-grid">
+                <div className="benefit-card">
                         <Image 
                             src="/INFINITY.png" 
                             width={90} 
@@ -18,6 +19,8 @@ export function Hero() {
                             alt="Networking"
                             className="benefit-icon"
                         />
+                </div>
+                <div className="benefit-card">
                         <Image 
                             src="/PI.png" 
                             width={90} 
@@ -25,6 +28,8 @@ export function Hero() {
                             alt="Learning"
                             className="benefit-icon"
                         />
+                </div>
+                <div className="benefit-card">
                         <Image 
                             src="/ML.png" 
                             width={90} 
@@ -32,6 +37,8 @@ export function Hero() {
                             alt="Competition"
                             className="benefit-icon"
                         />
+                </div>
+                <div className="benefit-card">
                         <Image 
                             src="/NEURAL.png" 
                             width={90} 
@@ -39,6 +46,7 @@ export function Hero() {
                             alt="Career"
                             className="benefit-icon"
                         />
+                </div>
                 </div>
             </div>
         </div>
