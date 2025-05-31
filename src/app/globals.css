@@ -25,30 +25,31 @@ html {
 
 h2 {
     font-weight: bolder;
-    font-size: 500px;
+    font-size: 100px;
     color: --secondary-color;
 }
 
 body {
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: white;
+    color: white;
     min-height: 100vh;
 }
 
 .aoai-nav {
-    background: linear-gradient(135deg, #fff, #3498db);
+    background: linear-gradient(135deg, #000000, #092440);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    font-size: 1.7rm;
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
 }
@@ -115,7 +116,7 @@ body {
 
 .section-title {
   text-align: center; /* Add this line */
-  color: var(--secondary-color);
+  color:#afced3;
   font-size: 2.5rem;
   margin-bottom: 3rem;
   position: relative;
@@ -293,12 +294,62 @@ h1, h2, h3, .section-title, .course-title, .event-title {
 
 .container {
     max-width: 800px;
-    margin: 6rem auto 4rem;
     padding: 2.5rem;
-    background: white;
-    border-radius: var(--radius);
+    width: 100%;
     box-shadow: var(--shadow);
     animation: fadeIn 0.6s ease-out;
+}
+
+.title-container {
+    width: 100%;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    animation: fadeIn 0.6s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+}
+
+.logo-title-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page-title {
+    font-size: 2rem; /* Smaller font size */
+    color: white;
+    text-align: left;
+    position: relative;
+    max-width: 800px;
+    margin: 0;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .title-container {
+        padding: 80px 1rem 1rem;
+        min-height: 250px;
+    }
+    
+    .page-title {
+        font-size: 1.5rem;
+    }
+    
+    .logo-above-title {
+        margin-bottom: 0.5rem;
+    }
+    
+    .title-logo {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .container h1 {
@@ -309,22 +360,80 @@ h1, h2, h3, .section-title, .course-title, .event-title {
     text-align: center;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+.hero-mission {
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.hero-join {
+    max-width: 1000px;
+    margin-top: 2rem;
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f8fafc;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        gap: 1rem;
+    }
+    
+    .benefit-card {
+        width: 150px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .benefit-card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
 .about-card {
-    background: var(--light-bg);
     padding: 2rem;
-    border-radius: var(--radius);
-    border-left: 4px solid var(--primary-color);
+    text-align: center;
     transition: var(--transition);
 }
 
-.about-card h3 {
+.about-card .section-title {
   text-align: center;
   width: 100%;
 }
@@ -471,26 +580,6 @@ button:hover {
     background: var(--secondary-color);
     transform: translateY(-1px);
     box-shadow: var(--shadow);
-}
-
-.page-title {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 3rem;
-    position: relative;
-    padding-bottom: 1rem;
-}
-
-.page-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
 
 .loading-indicator {
@@ -643,11 +732,15 @@ button.loading::after {
 }
 
 .section-title {
-  font-size: 3.5rem;
-  color: var(--secondary-color);
+  font-size: 4rem;
+  color: white;
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
+}
+
+main {
+    background: linear-gradient(130deg, #000000, #092440);
 }
 
 .section-title::after {
@@ -658,7 +751,7 @@ button.loading::after {
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(to right, #05CFCF, #2002C6);
   border-radius: 2px;
 }
 
@@ -817,12 +910,6 @@ button.loading::after {
   }
 } 
 
-/* Coaches Section */
-.coaches-section {
-  padding: 5rem 0;
-  background-color: white;
-}
-
 .coaches-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -868,11 +955,6 @@ button.loading::after {
 .coach-bio {
   color: var(--text-color);
   line-height: 1.6;
-}
-
-.sponsors-section {
-  padding: 5rem 0;
-  background: white;
 }
 
 .sponsors-grid {

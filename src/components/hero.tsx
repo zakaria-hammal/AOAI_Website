@@ -1,29 +1,46 @@
+import Image from "next/image";
+
 export function Hero() {
-    return (
-    <div className="container">
-        <div className="about-content">
-            <h1>The Algerian Olympiade of Artificial Intelligence</h1>
-            
-            <div className="about-grid">
-                <div className="about-card">
-                    <h3>AOAI Mission</h3>
-                    <p>IOAI &apos s mission is to inspire and engage young people in science, with a focus on AI. We aim to provide a platform for the world &apos s top AI students, selected through fair national competitions, to compete, exchange ideas, and build connections. Our goal is to foster a global dialogue on AI &apos s opportunities and ethical challenges, involving both students and the broader community.</p>
-                </div>
+    return ( 
+        <div className="hero-container">    
+            <div className="hero-mission">
+                <h2 className="section-title">AOAI Mission</h2>
+                <p className="mission-text">IOAI &apos s mission is to inspire and engage young people in science, with a focus on AI. We aim to provide a platform for the world &apos s top AI students, selected through fair national competitions, to compete, exchange ideas, and build connections. Our goal is to foster a global dialogue on AI &apos s opportunities and ethical challenges, involving both students and the broader community.</p>
             </div>
 
-            <div className="about-grid">
-                <div className="about-card">
-                    <h3>🎯 Why join?</h3>
-                    <p>Explore complex problems and compete with the best minds:</p>
-                    <ul className="feature-list">
-                        <li>Test your skills against top global talent</li>
-                        <li>Work on real-world AI challenges</li>
-                        <li>Boost your portfolio & network with experts</li>
-                    </ul>
+            <div className="hero-join">
+                <h2 className="section-title">Why join?</h2>
+                <div className="benefits-grid">
+                        <Image 
+                            src="/INFINITY.png" 
+                            width={90} 
+                            height={90} 
+                            alt="Networking"
+                            className="benefit-icon"
+                        />
+                        <Image 
+                            src="/PI.png" 
+                            width={90} 
+                            height={90} 
+                            alt="Learning"
+                            className="benefit-icon"
+                        />
+                        <Image 
+                            src="/ML.png" 
+                            width={90} 
+                            height={90} 
+                            alt="Competition"
+                            className="benefit-icon"
+                        />
+                        <Image 
+                            src="/NEURAL.png" 
+                            width={90} 
+                            height={90} 
+                            alt="Career"
+                            className="benefit-icon"
+                        />
                 </div>
             </div>
         </div>
-    </div>
     ); 
-    
 }

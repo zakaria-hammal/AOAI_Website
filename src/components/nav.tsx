@@ -1,17 +1,18 @@
-"use clien";
+"use client";
 
 import Link from "next/link";
 import Image from 'next/image';
 
 export function Nav() {
     return(
-        <nav className="aoai-nav">
+    <nav className="aoai-nav">
         <div className="nav-container">
+        
             <Link href="/" className="nav-logo">
                 <Image
-                    src="/AOAI.png"
-                    width={150}
-                    height={150}
+                    src="/logo.png"
+                    width={50}
+                    height={50}
                     alt="Logo"
                     priority
                 />
@@ -23,7 +24,7 @@ export function Nav() {
                     <li><Link href="#events" className="nav-link">Events</Link></li>
                     <li><Link href="#courses" className="nav-link">Courses</Link></li>
                     <li><Link href="#coaches" className="nav-link">Coaches</Link></li>
-                    <li><Link href="#sponsors" className="nav-link">Ambassadors</Link></li>
+                    <li><Link href="#sponsors" className="nav-link">Sponsors</Link></li>
                 </ul>
             </div>
         </div>
