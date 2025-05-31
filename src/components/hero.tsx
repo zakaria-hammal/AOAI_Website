@@ -5,7 +5,7 @@ export function Hero() {
         <div className="hero-container">    
             <div className="hero-mission">
                 <h2 className="section-title">AOAI Mission</h2>
-                <p className="mission-text">IOAI &apos s mission is to inspire and engage young people in science, with a focus on AI. We aim to provide a platform for the world &apos s top AI students, selected through fair national competitions, to compete, exchange ideas, and build connections. Our goal is to foster a global dialogue on AI &apos s opportunities and ethical challenges, involving both students and the broader community.</p>
+                <p className="mission-text">IOAI&apos;s mission is to inspire and engage young people in science, with a focus on AI. We aim to provide a platform for the world&apos;s top AI students, selected through fair national competitions, to compete, exchange ideas, and build connections. Our goal is to foster a global dialogue on AI&apos;s opportunities and ethical challenges, involving both students and the broader community.</p>
             </div>
 
             <div className="hero-join">
