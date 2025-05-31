@@ -947,9 +947,34 @@ main {
     margin-top: 3rem;
     text-align: center;
     font-size: 1.5rem;
+    color: #afced3; /* Add text color */
 }
 
-/* Responsive */
+.sponsors-footer .nav-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: var(--transition);
+    position: relative;
+}
+
+.sponsors-footer .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.sponsors-footer .nav-link:hover {
+    color: white;
+}
+
+.sponsors-footer .nav-link:hover::after {
+    width: 100%;
+}/* Responsive */
 @media (max-width: 768px) {
   .coaches-grid, .sponsors-grid {
     grid-template-columns: 1fr;
