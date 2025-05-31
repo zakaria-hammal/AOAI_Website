@@ -10,28 +10,28 @@ interface Coach {
 export function Coaches() {
   const coaches: Coach[] = [
     {
-        name: "Drici Mohammed Hachem",
-        role: "Head Coach",
-        bio: "Student in University of El oued",
-        image: "/hachem.webp"
-    },
-    {
         name: "Ilyes Mohammed",
-        role: "Computer vision researcher",
+        role: "Head Coach",
         bio: "College proffessor",
         image: "/coach2.jpg"
     },
     {
+        name: "Drici Mohammed Hachem",
+        role: "Batata",
+        bio: "Student in University of El oued",
+        image: "/mohammed-hachem-drici.jpeg"
+    },
+    {
         name: "Raouf Ould Ali",
-        role: "Nice guy",
+        role: "Olive Oil",
         bio: "AI student in ENSIA",
-        image: "/coach3.jpg"
+        image: "/raouf-ould-ali.jpeg"
     },
     {
         name: "Zakaria HAMMAL",
-        role: "Also a Nice guy",
+        role: "Nice guy",
         bio: "Student in USTHB",
-        image: "/coach3.jpg" 
+        image: "/zakaria-hammal.jpeg" 
     }
   ];
 
@@ -47,13 +47,16 @@ export function Coaches() {
           {coaches.map((coach, index) => (
             <div key={index} className="coach-card">
               <div className="coach-image">
-                <Image
-                  src={coach.image}
-                  width={200}
-                  height={200}
-                  alt={coach.name}
-                  className="rounded-full"
-                />
+              
+            <Image
+              src={coach.image}
+              width={200}
+              height={200}
+              alt={coach.name}
+              className="rounded-full"
+            />
+            
+            
               </div>
               <div className="coach-content">
                 <h3 className="coach-name">{coach.name}</h3>

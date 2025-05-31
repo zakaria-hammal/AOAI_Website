@@ -875,3 +875,174 @@ main {
   animation-delay: 1.5s;
 }
 
+/* ===================== */
+/* MOBILE RESPONSIVE CSS */
+/* ===================== */
+@media (max-width: 768px) {
+  /* Navigation */
+  .aoai-nav {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  /* Hero Section */
+  .title-container {
+    height: auto;
+    padding: 4rem 1rem 2rem;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-mission, .hero-join {
+    padding: 0 1rem;
+  }
+
+  .mission-text {
+    font-size: 1rem;
+  }
+
+  /* Events */
+  .events-section, .upcoming-events {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .event-card {
+    flex-direction: column;
+    padding: 1.25rem;
+    border: 5px solid black;
+  }
+
+  .event-date {
+    padding: 1rem 0 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .event-title {
+    font-size: 1.5rem;
+  }
+
+  /* Courses */
+  .courses-section {
+    padding: 3rem 0;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Coaches */
+  .coaches-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .coach-card {
+    padding: 1.5rem;
+  }
+
+  .coach-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Ambassadors */
+  .ambassador-card {
+    height: 250px;
+  }
+
+  .ambassador-info {
+    padding: 1rem;
+  }
+
+  /* Sponsors */
+  .sponsors-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sponsors-section-footer {
+    font-size: 1.2rem;
+  }
+
+  /* Footer */
+  .aoai-footer {
+    height: auto;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* General Adjustments */
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .benefits-grid {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .coaches-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .sponsors-grid {
+    flex-wrap: wrap;
+  }
+  
+  .title-container {
+    height: 700px;
+  }
+}
+
+/* Existing CSS continues below... */

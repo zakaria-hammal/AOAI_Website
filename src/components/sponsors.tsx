@@ -29,6 +29,7 @@ export function Sponsors() {
   return (
     <>
       <div className="sponsors-container">
+      {/*
         <div className="section-header">
           <h2 className="section-title">Our Valued Sponsors</h2>
           <p className="section-subtitle">Supported by leading organizations in AI and technology</p>
@@ -47,7 +48,7 @@ export function Sponsors() {
             </a>
           ))}
         </div>
-        
+        */}
         <div className="sponsors-section-footer">
           <p>For official sponsorship request, <Link href="mailto:aoai@algerianoi.com">contact-us</Link></p>
         </div>
