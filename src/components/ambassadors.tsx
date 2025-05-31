@@ -33,16 +33,19 @@ export function Ambassadors() {
               <div className="ambassador-image-container">
                 <Image 
                   src={ambassador.image}
-                  width={200}
-                  height={200}
+                  fill
                   alt={ambassador.name}
                   className="ambassador-image"
                 />
-                <div className="ambassador-info">
-                  <h3 className="ambassador-name">{ambassador.name}</h3>
+                <div className="ambassador-info"> 
                   <p className="ambassador-role">{ambassador.role}</p>
                   <p className="ambassador-university">{ambassador.university}</p>
                 </div>
+              </div>
+              <h3 className="ambassador-name">{ambassador.name}</h3>
+              <div className="ambassador-mobile-info">
+                <p className="ambassador-role">{ambassador.role}</p>
+                <p className="ambassador-university">{ambassador.university}</p>
               </div>
             </div>
           ))}

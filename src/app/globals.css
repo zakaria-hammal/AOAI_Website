@@ -32,6 +32,8 @@ h2 {
 body {
     line-height: 1.6;
     color: white;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -304,13 +306,39 @@ event-icon-container {
     margin-top: 2rem;
 }
 
-.benefit-card:hover {
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    max-width: 250px;
+}
+
+.benefit-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: rgba(5, 207, 207, 0.1);
+    border-radius: 50%;
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+.benefit-card:hover .benefit-icon-container {
+    background: rgba(5, 207, 207, 0.2);
     transform: translateY(-5px);
 }
 
-.benefit-icon {
-    margin-bottom: 1rem;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+.benefit-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f8fafc;
+    max-width: 200px;
+    line-height: 1.4;
 }
 
 .about-card {
@@ -357,18 +385,13 @@ event-icon-container {
 }
 
 .aoai-footer {
-  background: linear-gradient(135deg, #000000, #092440);
-  position: sticky;
+  position: fixed; /* Change from sticky to fixed */
   bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  padding: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
   height: 60px;
+  /* Remove sticky properties */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 100;
 }
 
 .footer-container {
@@ -381,7 +404,6 @@ event-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .social-links {
@@ -512,6 +534,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 1 0 auto;
+    padding-bottom: 60px;
 }
 
 .section-title::after {
@@ -771,40 +795,27 @@ main {
   width: 100%;
 }
 
-.ambassadors-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 3rem;
-}
-
 .ambassador-card {
-  perspective: 1000px;
-  height: 300px;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 .ambassador-image-container {
   position: relative;
   width: 100%;
-  height: 100%;
-}
-
-.ambassador-card:hover .ambassador-image-container {
-  transform: translateZ(30px) scale(1.05);
+  aspect-ratio: 1/1.1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .ambassador-image {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.ambassador-card:hover .ambassador-image {
-  box-shadow: 0 15px 40px rgba(5, 207, 207, 0.3);
 }
 
 .ambassador-info {
@@ -814,7 +825,6 @@ main {
   right: 0;
   background: rgba(0, 0, 0, 0.8);
   padding: 1.5rem;
-  border-radius: 0 0 var(--radius) var(--radius);
   transform: translateY(100%);
   opacity: 0;
   transition: all 0.5s ease;
@@ -827,53 +837,15 @@ main {
 }
 
 .ambassador-name {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--accent-color);
 }
 
-.ambassador-role {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #f8fafc;
-  margin-bottom: 0.25rem;
+.ambassador-mobile-info {
+  display: none;
 }
-
-.ambassador-university {
-  font-size: 0.85rem;
-  color: #afced3;
-  font-style: italic;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(2deg);
-  }
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-}
-
-.ambassador-card {
-  animation: float 6s ease-in-out infinite;
-}
-
-.ambassador-card:nth-child(2n) {
-  animation-delay: 0.5s;
-}
-
-.ambassador-card:nth-child(3n) {
-  animation-delay: 1s;
-}
-
-.ambassador-card:nth-child(4n) {
-  animation-delay: 1.5s;
-}
-
 /* ===================== */
 /* MOBILE RESPONSIVE CSS */
 /* ===================== */
@@ -905,7 +877,7 @@ main {
 
   .title-container {
     height: auto;
-    padding: 5rem 1rem 2rem;
+    padding: 4rem 1rem 2rem;
   }
 
   .page-title {
@@ -1015,6 +987,35 @@ main {
 
   .container {
     padding: 1.5rem;
+  }
+
+  
+.ambassador-card {
+    height: auto;
+    perspective: none;
+  }
+  
+  .ambassador-info {
+    display: none;
+  }
+  
+  .ambassador-mobile-info {
+    display: block;
+    padding-top: 0.5rem;
+  }
+  
+  .ambassador-mobile-info .ambassador-role,
+  .ambassador-mobile-info .ambassador-university {
+    color: #f8fafc;
+    font-size: 0.9rem;
+  }
+  
+  .ambassador-image-container {
+    height: auto;
+  }
+  
+  .ambassador-card:hover .ambassador-image-container {
+    transform: none;
   }
 }
 
