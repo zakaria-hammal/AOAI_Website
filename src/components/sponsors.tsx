@@ -1,13 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
 
+/*
 interface Sponsor {
   name: string;
   logo: string;
   url: string;
 }
+*/
 
 export function Sponsors() {
+  /*
   const sponsors: Sponsor[] = [
     {
       name: "Algiers Tech",
@@ -24,7 +26,7 @@ export function Sponsors() {
       logo: "/sponsor3.png",
       url: "https://adf.dz"
     }
-  ];
+  ];*/
 
   return (
     <>
