@@ -878,7 +878,6 @@ main {
 /* MOBILE RESPONSIVE CSS */
 /* ===================== */
 @media (max-width: 768px) {
-  /* Navigation */
   .aoai-nav {
     font-size: 1rem;
     padding: 1rem;
@@ -904,10 +903,9 @@ main {
     display: flex;
   }
 
-  /* Hero Section */
   .title-container {
     height: auto;
-    padding: 4rem 1rem 2rem;
+    padding: 5rem 1rem 2rem;
   }
 
   .page-title {
@@ -1006,7 +1004,6 @@ main {
     gap: 1rem;
   }
 
-  /* General Adjustments */
   h2 {
     font-size: 2.5rem;
   }
@@ -1041,4 +1038,3 @@ main {
   }
 }
 
-/* Existing CSS continues below... */
