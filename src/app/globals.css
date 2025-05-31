@@ -211,39 +211,6 @@ event-icon-container {
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-  .event-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.25rem;
-  }
-  
-  .event-icon-container {
-    padding-right: 0;
-    padding-bottom: 1rem;
-    min-width: auto;
-  }
-  
-  .event-date {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding: 1rem 0 0;
-    border-left: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    width: 100%;
-    margin-top: 1rem;
-  }
-  
-  .event-content {
-    width: 100%;
-  }
-  
-  /* Add space between items */
-  .events-grid {
-    gap: 2rem;
-  }
-}
 .cta-link {
     background: #e67e22;
     padding: 0.5rem 1.25rem;
@@ -313,44 +280,6 @@ event-icon-container {
     font-weight: 600;
 }
 
-@media (max-width: 768px) {
-    .title-container {
-        padding: 80px 1rem 1rem;
-        min-height: 250px;
-    }
-    
-    .page-title {
-        font-size: 1.5rem;
-    }
-    
-    .logo-above-title {
-        margin-bottom: 0.5rem;
-    }
-    
-    .title-logo {
-        width: 80px;
-        height: 80px;
-    }
-}
-
-.container h1 {
-    font-size: 4rem;
-    font-weight: bolder;
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .hero-mission {
     max-width: 800px;
     margin-bottom: 3rem;
@@ -384,28 +313,6 @@ event-icon-container {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
-@media (max-width: 768px) {
-    .benefits-grid {
-        gap: 1rem;
-    }
-    
-    .benefit-card {
-        width: 150px;
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .benefits-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .benefit-card {
-        width: 100%;
-        max-width: 250px;
-    }
-}
 .about-card {
     padding: 2rem;
     text-align: center;
@@ -539,75 +446,6 @@ event-icon-container {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-
-    .nav-links {
-        width: 100%;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .nav-links a {
-        padding: 0.75rem;
-        border-radius: var(--radius);
-    }
-
-    .container {
-        padding: 1.5rem;
-        margin: 5rem 1rem 2rem;
-    }
-
-    .container h1 {
-        font-size: 1.75rem;
-    }
-
-    .page-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        top: 60px;
-        right: -100%;
-        background: #2c3e50;
-        width: 100%;
-        height: calc(100vh - 60px);
-        transition: right 0.3s ease;
-        padding: 2rem;
-    }
-    
-    .nav-menu.active {
-        right: 0;
-    }
-    
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .nav-toggle {
-        display: block;
-    }
-    
-    .nav-toggle.active .toggle-bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    .nav-toggle.active .toggle-bar:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .nav-toggle.active .toggle-bar:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
     }
 }
 
@@ -825,24 +663,6 @@ main {
   box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
 }
 
-@media (max-width: 768px) {
-  .courses-section {
-    padding: 3rem 0;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .courses-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .course-card {
-    max-width: 100%;
-  }
-} 
-
 .coaches-grid {
   display: flex;
   flex-direction: row;
@@ -899,86 +719,48 @@ main {
   line-height: 1.6;
 }
 
-.sponsors-grid {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+.sponsors-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sponsors-section-footer {
   margin-top: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #afced3;
+  padding: 1rem 0;
 }
 
-.sponsor-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  background: white;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  height: 120px;
+.sponsors-section-footer p {
+  margin: 0;
 }
 
-.sponsor-item:hover {
-  transform: scale(1.05);
-  box-shadow: var(--shadow);
-}
-
-.sponsor-logo {
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-  filter: grayscale(100%);
-  opacity: 0.8;
+.sponsors-section-footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  position: relative;
   transition: var(--transition);
 }
 
-.sponsor-item:hover .sponsor-logo {
-  filter: grayscale(0%);
-  opacity: 1;
+.sponsors-section-footer a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
 }
 
-.sponsors-footer {
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #afced3;
+.sponsors-section-footer a:hover {
+  color: white;
 }
 
-.sponsors-footer .nav-link {
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: var(--transition);
-    position: relative;
-}
-
-.sponsors-footer .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: var(--accent-color);
-    transition: width 0.3s ease;
-}
-
-.sponsors-footer .nav-link:hover {
-    color: white;
-}
-
-.sponsors-footer .nav-link:hover::after {
-    width: 100%;
-}/* Responsive */
-@media (max-width: 768px) {
-  .coaches-grid, .sponsors-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .coach-card, .sponsor-item {
-    padding: 1.5rem;
-  }
+.sponsors-section-footer a:hover::after {
+  width: 100%;
 }
 
 .ambassadors-grid {
@@ -1056,7 +838,6 @@ main {
   font-style: italic;
 }
 
-/* Hover animation for grid */
 @keyframes float {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -1085,22 +866,3 @@ main {
   animation-delay: 1.5s;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .ambassadors-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .ambassador-card {
-    height: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .ambassadors-grid {
-    grid-template-columns: 1fr;
-    max-width: 350px;
-    margin: 0 auto;
-  }
-}

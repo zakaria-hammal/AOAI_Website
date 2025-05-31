@@ -47,14 +47,13 @@ export function Sponsors() {
             </a>
           ))}
         </div>
-        <div className="sponsors-footer">
-            <p>For official sponsorship request, <Link href="mailto:aoai@algerianoi.com" className="nav-link">contact-us</Link></p>
+        
+        <div className="sponsors-section-footer">
+          <p>For official sponsorship request, <Link href="mailto:aoai@algerianoi.com">contact-us</Link></p>
         </div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
       </div>
+      <br />
+      <br />
     </>
   );
 }
