@@ -107,7 +107,6 @@ body {
     width: 100%;
 }
 
-/* Events Section Styles */
 .events-section {
   max-width: 1200px;
   margin: 4rem auto;
@@ -115,16 +114,15 @@ body {
 }
 
 .section-title {
-  text-align: center; /* Add this line */
+  text-align: center;
   color:#afced3;
   font-size: 2.5rem;
   margin-bottom: 3rem;
   position: relative;
-  display: block; /* Change from inline-block to block */
+  display: block;
   width: 100%;
 }
 
-/* Add new rule for all heading levels */
 h1, h2, h3, .section-title, .course-title, .event-title {
   text-align: center;
 }
@@ -137,13 +135,11 @@ event-icon-container {
   padding-right: 1.5rem;
 }
 
-/* Adjust event-card layout */
 .event-card {
   display: flex;
   align-items: center;
 }
 
-/* Add more space between items */
 .events-grid {
   gap: 2.5rem;
 }
@@ -215,7 +211,6 @@ event-icon-container {
   line-height: 1.5;
 }
 
-/* Update mobile styles in globals.css */
 @media (max-width: 768px) {
   .event-card {
     flex-direction: column;
@@ -307,7 +302,7 @@ event-icon-container {
 }
 
 .page-title {
-    font-size: 2rem; /* Smaller font size */
+    font-size: 2rem;
     color: white;
     text-align: left;
     position: relative;
@@ -947,7 +942,7 @@ main {
     margin-top: 3rem;
     text-align: center;
     font-size: 1.5rem;
-    color: #afced3; /* Add text color */
+    color: #afced3;
 }
 
 .sponsors-footer .nav-link {
