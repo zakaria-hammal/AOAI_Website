@@ -51,6 +51,8 @@ export function Sponsors() {
             <p>For official sponsorship request, <Link href="mailto:aoai@algerianoi.com" className="nav-link">contact-us</Link></p>
         </div>
       </div>
+      <br></br>
+      <br></br>
     </>
   );
 }
