@@ -725,6 +725,15 @@ main {
   padding: 0 2rem;
 }
 
+.sponsors-grid {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
 .sponsors-section-footer {
   margin-top: 3rem;
   text-align: center;
