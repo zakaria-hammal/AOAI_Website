@@ -12,7 +12,7 @@ export function Ambassadors() {
   const ambassadors: Ambassador[] = [
     {
       id: 1,
-      name: "Meouane Debah",
+      name: "Merouane Debah",
       role: "AI Researcher",
       university: "Khalifa University",
       image: "/merouane-debah.jpg"

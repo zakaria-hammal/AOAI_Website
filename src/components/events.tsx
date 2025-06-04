@@ -6,7 +6,6 @@ export function Events() {
       <h2 className="section-title">Upcoming Events</h2>
       
       <div className="events-grid">
-        {/* Event 1 */}
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
@@ -29,7 +28,6 @@ export function Events() {
           </div>
         </div>
         
-        {/* Event 2 */}
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
@@ -52,7 +50,6 @@ export function Events() {
           </div>
         </div>
         
-        {/* Event 3 */}
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
@@ -75,7 +72,6 @@ export function Events() {
           </div>
         </div>
         
-        {/* Event 4 */}
         <div className="event-card">
           <div className="event-icon-container">
             <Image 

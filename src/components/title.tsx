@@ -14,7 +14,7 @@ export function Title() {
                />
            </div>
            <h1 className="page-title">
-               The Algerian Olympiade of Artificial Intelligence
+               The Algerian Olympiad in Artificial Intelligence
            </h1>
        </div>
    </div>   ) 
