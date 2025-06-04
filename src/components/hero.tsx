@@ -4,12 +4,23 @@ export function Hero() {
     return ( 
         <div className="hero-container">    
             <div className="hero-mission">
-                <h2 className="section-title">AOAI Mission</h2>
-                <p className="mission-text">IOAI&apos;s mission is to inspire and engage young people in science, with a focus on AI. We aim to provide a platform for the world&apos;s top AI students, selected through fair national competitions, to compete, exchange ideas, and build connections. Our goal is to foster a global dialogue on AI&apos;s opportunities and ethical challenges, involving both students and the broader community.</p>
+                <h2 className="mission-title">AOAI Mission</h2>
+                <p className="mission-text">The Algerian Olympiad in Artificial Intelligence (AOAI) aims to identify, train, and empower the nation’s most talented young minds in AI, preparing them to represent Algeria at the International Olympiad in Artificial Intelligence. Through rigorous selection, mentorship, and innovation-driven learning, AOAI fosters excellence and inspires the next generation of AI leaders.</p>
             </div>
 
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            
             <div className="hero-join">
-                <h2 className="section-title">Why Joining ?</h2>
+                <h2 className="section-title">Why Join Us ?</h2>
                 <div className="benefits-grid">
                     <div className="benefit-card">
                         <div className="benefit-icon-container">
@@ -21,7 +32,7 @@ export function Hero() {
                                 className="benefit-icon"
                             />
                         </div>
-                        <p className="benefit-text">Learn Mathematics</p>
+                        <p className="benefit-text"><b className="benefit-header">Math</b> <br></br> Strengthen your AI-ready math skills.</p>
                     </div>
                     <div className="benefit-card">
                         <div className="benefit-icon-container">
@@ -33,7 +44,7 @@ export function Hero() {
                                 className="benefit-icon"
                             />
                         </div>
-                        <p className="benefit-text">Learn machine learning</p>
+                        <p className="benefit-text"><b className="benefit-header">Programming</b> <br></br> Learn to code smart solutions.</p>
                     </div>
                     <div className="benefit-card">
                         <div className="benefit-icon-container">
@@ -45,7 +56,7 @@ export function Hero() {
                                 className="benefit-icon"
                             />
                         </div>
-                        <p className="benefit-text">Improve problem-solving skills</p>
+                        <p className="benefit-text"><b className="benefit-header">Problem Solving</b> <br></br> Think critically, solve creatively.</p>
                     </div>
                 </div>
             </div>

@@ -283,19 +283,23 @@ event-icon-container {
 }
 
 .hero-mission {
-    max-width: 800px;
+    max-width: 1200px;
     margin-bottom: 3rem;
 }
 
+.mission-title {
+    font-size: 7rem;
+}
+
 .hero-join {
-    max-width: 1000px;
     margin-top: 2rem;
 }
 
 .mission-text {
-    font-size: 1.1rem;
+    font-size: 2rem;
     line-height: 1.8;
     color: #f8fafc;
+    text-align: center;
 }
 
 .benefits-grid {
@@ -333,12 +337,17 @@ event-icon-container {
     transform: translateY(-5px);
 }
 
+.benefit-header {
+    font-size: 1.2rem;
+}
+
 .benefit-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #f8fafc;
     max-width: 200px;
     line-height: 1.4;
+    text-align: center;
 }
 
 .about-card {
@@ -705,7 +714,7 @@ main {
 
 .coach-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px var(--primary-color);
 }
 
 .coach-image {

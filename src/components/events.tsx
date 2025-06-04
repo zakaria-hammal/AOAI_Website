@@ -17,7 +17,7 @@ export function Events() {
             />
           </div>
           <div className="event-content">
-            <h3 className="event-title">Round 1</h3>
+            <h3 className="event-title">Summer Camp</h3>
             <p className="event-description">
               First cometition.
             </p>
@@ -39,7 +39,7 @@ export function Events() {
             />
           </div>
           <div className="event-content">
-            <h3 className="event-title">Round 2</h3>
+            <h3 className="event-title">Round 1</h3>
             <p className="event-description">
               Second competition
             </p>
@@ -61,7 +61,7 @@ export function Events() {
             />
           </div>
           <div className="event-content">
-            <h3 className="event-title">TST</h3>
+            <h3 className="event-title">Round 2</h3>
             <p className="event-description">
               Final Test
             </p>
@@ -84,7 +84,7 @@ export function Events() {
 
           </div>
           <div className="event-content">
-            <h3 className="event-title">Data Camp</h3>
+            <h3 className="event-title">Team Selection Test</h3>
             <p className="event-description">
               Learn from industry experts about the latest trends in data science and analytics.
             </p>
