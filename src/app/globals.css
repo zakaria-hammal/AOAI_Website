@@ -288,8 +288,19 @@ event-icon-container {
 }
 
 .mission-title {
-    font-size: 7rem;
+    font-size: 5rem;
 }
+
+.mission-title::after{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #05CFCF, #2002C6);
+  border-radius: 2px;}
 
 .hero-join {
     margin-top: 2rem;
@@ -300,6 +311,7 @@ event-icon-container {
     line-height: 1.8;
     color: #f8fafc;
     text-align: center;
+    font-weight: bold;
 }
 
 .benefits-grid {
@@ -714,7 +726,7 @@ main {
 
 .coach-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px var(--primary-color);
+  box-shadow: 0 10px 30px #2002C6;
 }
 
 .coach-image {
