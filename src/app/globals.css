@@ -912,98 +912,42 @@ main {
     opacity: 1;
 }
 
-@media (max-width: 767px) {
-  /* Global adjustments */
-  html { scroll-padding-top: 20px; }
-  body { padding: 0 15px; }
-  
-  /* Typography */
-  h1, h2, h3, .section-title {
-    font-size: 2rem !important;
-    text-align: center !important;
-  }
-  
-  .mission-title, .section-title {
-    font-size: 2.5rem !important;
-  }
-  
-  .mission-text, .benefit-text {
-    font-size: 1.2rem !important;
-  }
-
-  /* Layouts */
-  .title-container {
+@media (max-width: 768px) {Add commentMore actions
+  .ambassador-card {
     height: auto;
-    padding: 50px 20px;
+    perspective: none;
   }
-
-  .logo-title-container {
-    align-items: center !important;
-    text-align: center;
-  }
-
-  .page-title {
-    font-size: 1.8rem !important;
-    margin-top: 20px;
-  }
-
-  /* Hero section */
-  .hero-mission {
-    margin-top: 30px;
+  .ambassador-card:hover .ambassador-image-container {
+    transform: none;
   }
 
   .benefits-grid {
+    gap: 2rem;
     flex-direction: column;
-    gap: 3rem !important;
   }
-
-  /* Cards layout */
-  .ambassadors-grid, 
-  .coaches-grid, 
-  .courses-grid, 
-  .events-grid {
-    flex-direction: column;
-    height: auto !important;
-    gap: 2rem !important;
+    
+  .benefit-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 100%;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: rgba(5, 207, 207, 0.05);
+    border-radius: var(--radius);
   }
-
-  .ambassador-card,
-  .coach-card,
-  .course-card,
-  .event-card {
-    width: 100%;
-    margin-bottom: 20px;
+    
+  .benefit-icon-container {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
   }
-
-  /* Event cards */
-  .event-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .event-date {
-    margin-top: 15px;
-    padding-left: 0 !important;
-    border-left: none !important;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    padding-top: 15px;
-  }
-
-  /* Footer */
-  .aoai-footer {
-    position: relative;
-    height: auto;
-    padding: 20px 0;
-  }
-
-  .social-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .social-icons {
-    justify-content: center;
+    
+  .benefit-text {
+    text-align: left;
+    max-width: none;
+    font-size: 1rem;
   }
 }
 
@@ -1085,5 +1029,182 @@ main {
   .social-link {
     padding: 0.5rem;
     font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .aoai-nav {
+    display: none;
+  }
+
+  .title-container {
+    height: auto;
+    padding: 4rem 1rem 2rem;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-mission, .hero-join {
+    padding: 0 1rem;
+  }
+
+  .mission-text {
+    font-size: 1rem;
+  }
+
+  /* Events */
+  .events-section, .upcoming-events {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .event-card {
+    flex-direction: column;
+    padding: 1.25rem;
+    border: 5px solid black;
+  }
+
+  .event-date {
+    padding: 1rem 0 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .event-title {
+    font-size: 1.5rem;
+  }
+
+  /* Courses */
+  .courses-section {
+    padding: 3rem 0;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .coaches-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .coach-card {
+    padding: 1.5rem;
+  }
+
+  .coach-image {
+    border-radius: 50%;
+  }
+
+  .ambassador-card {
+    height: 250px;
+  }
+
+  .ambassador-info {
+    padding: 1rem;
+  }
+
+  /* Sponsors */
+  .sponsors-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sponsors-section-footer {
+    font-size: 1.2rem;
+  }
+
+  /* Footer */
+  .aoai-footer {
+    height: auto;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .benefits-grid {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .ambassador-card {
+    height: auto;
+    perspective: none;
+  }
+  
+  .ambassador-info {
+    display: none;
+  }
+  
+  .ambassador-mobile-info {
+    display: block;
+    padding-top: 0.5rem;
+  }
+  
+  .ambassador-mobile-info .ambassador-role,
+  .ambassador-mobile-info .ambassador-university {
+    color: #f8fafc;
+    font-size: 0.9rem;
+  }
+  
+  .ambassador-image-container {
+    height: auto;
+  }
+  
+  .ambassador-card:hover .ambassador-image-container {
+    transform: none;
+  }
+
+  .benefits-grid {
+    gap: 2rem;
+    flex-direction: column;
+  }
+    
+  .benefit-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 100%;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: rgba(5, 207, 207, 0.05);
+    border-radius: var(--radius);
+  }
+    
+  .benefit-icon-container {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+  }
+    
+  .benefit-text {
+    text-align: left;
+    max-width: none;
+    font-size: 1rem;
   }
 }
