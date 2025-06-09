@@ -815,414 +815,99 @@ main {
   width: 100%;
 }
 
+.ambassadors-grid {
+    display: flex;
+    gap: 0px;
+    height: 500px;
+}
+
 .ambassador-card {
-  position: relative;
-  text-align: center;
-  width: 100%;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    flex: 1;
+    transition: flex 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.ambassador-card:hover {
+    flex: 2;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 .ambassador-image-container {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1/1.1;
-  border-radius: var(--radius);
-  overflow: hidden;
-  margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .ambassador-image {
-  width: 75%;
-  height: 75%;
-  object-fit: cover;
-  border-radius: var(--radius);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.ambassador-card:hover .ambassador-image {
+    transform: scale(1.03);
 }
 
 .ambassador-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 1.5rem;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: all 0.5s ease;
-  backdrop-filter: blur(5px);
-}
-
-.ambassador-card:hover .ambassador-info {
-  transform: translateY(0);
-  opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.4s ease;
 }
 
 .ambassador-name {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.ambassador-mobile-info {
-  display: none;
+.ambassador-role {
+    font-size: 1.1rem;
+    color: #05CFCF;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
-/* ===================== */
-/* MOBILE RESPONSIVE CSS */
-/* ===================== */
-@media (max-width: 768px) {
-  .aoai-nav {
-    display: none;
-  }
 
-  .title-container {
-    height: auto;
-    padding: 4rem 1rem 2rem;
-  }
-
-  .page-title {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-mission, .hero-join {
-    padding: 0 1rem;
-  }
-
-  .mission-text {
-    font-size: 1rem;
-  }
-
-  /* Events */
-  .events-section, .upcoming-events {
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .event-card {
-    flex-direction: column;
-    padding: 1.25rem;
-    border: 5px solid black;
-  }
-
-  .event-date {
-    padding: 1rem 0 0;
-    border-left: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    min-width: 100%;
-    margin-top: 1rem;
-  }
-
-  .event-title {
-    font-size: 1.5rem;
-  }
-
-  /* Courses */
-  .courses-section {
-    padding: 3rem 0;
-  }
-
-  .courses-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .course-card {
-    margin-bottom: 1.5rem;
-  }
-
-  .coaches-grid {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .coach-card {
-    padding: 1.5rem;
-  }
-
-  .coach-image {
-    border-radius: 50%;
-  }
-
-  .ambassador-card {
-    height: 250px;
-  }
-
-  .ambassador-info {
-    padding: 1rem;
-  }
-
-  /* Sponsors */
-  .sponsors-grid {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .sponsors-section-footer {
-    font-size: 1.2rem;
-  }
-
-  /* Footer */
-  .aoai-footer {
-    height: auto;
-  }
-
-  .social-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  .benefits-grid {
-    gap: 2rem;
-    flex-direction: column;
-  }
-
-  .container {
-    padding: 1.5rem;
-  }
-
-  
-  .ambassador-card {
-    height: auto;
-    perspective: none;
-  }
-  
-  .ambassador-info {
-    display: none;
-  }
-  
-  .ambassador-mobile-info {
-    display: block;
-    padding-top: 0.5rem;
-  }
-  
-  .ambassador-mobile-info .ambassador-role,
-  .ambassador-mobile-info .ambassador-university {
-    color: #f8fafc;
-    font-size: 0.9rem;
-  }
-  
-  .ambassador-image-container {
-    height: auto;
-  }
-  
-  .ambassador-card:hover .ambassador-image-container {
-    transform: none;
-  }
-
-  .benefits-grid {
-    gap: 2rem;
-    flex-direction: column;
-  }
-    
-  .benefit-card {
-    flex-direction: row;
+.ambassador-university {
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    text-align: left;
-    max-width: 100%;
-    gap: 1.5rem;
-    padding: 1rem;
-    background: rgba(5, 207, 207, 0.05);
-    border-radius: var(--radius);
-  }
-    
-  .benefit-icon-container {
-    flex-shrink: 0;
-    width: 80px;
-    height: 80px;
-  }
-    
-  .benefit-text {
-    text-align: left;
-    max-width: none;
-    font-size: 1rem;
-  }
+    gap: 8px;
+    font-size: 0.95rem;
+    color: #afced3;
 }
 
-/* Tablet adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .aoai-nav {
-    display: none;
-  }
+.university-icon {
+    color: #2002C6;
+}
 
-  .title-container {
-    height: auto;
-    padding: 4rem 1rem 2rem;
-  }
-
-  .page-title {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-mission, .hero-join {
-    padding: 0 1rem;
-  }
-
-  .mission-text {
-    font-size: 1rem;
-  }
-
-  /* Events */
-  .events-section, .upcoming-events {
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .event-card {
-    flex-direction: column;
-    padding: 1.25rem;
-    border: 5px solid black;
-  }
-
-  .event-date {
-    padding: 1rem 0 0;
-    border-left: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    min-width: 100%;
-    margin-top: 1rem;
-  }
-
-  .event-title {
-    font-size: 1.5rem;
-  }
-
-  /* Courses */
-  .courses-section {
-    padding: 3rem 0;
-  }
-
-  .courses-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .course-card {
-    margin-bottom: 1.5rem;
-  }
-
-  .coaches-grid {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .coach-card {
+.ambassador-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
     padding: 1.5rem;
-  }
-
-  .coach-image {
-    border-radius: 50%;
-  }
-
-  .ambassador-card {
-    height: 250px;
-  }
-
-  .ambassador-info {
-    padding: 1rem;
-  }
-
-  /* Sponsors */
-  .sponsors-grid {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .sponsors-section-footer {
-    font-size: 1.2rem;
-  }
-
-  /* Footer */
-  .aoai-footer {
-    height: auto;
-  }
-
-  .social-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  .benefits-grid {
-    gap: 2rem;
-    flex-direction: column;
-  }
-
-  .container {
-    padding: 1.5rem;
-  }
-
-  
-  .ambassador-card {
-    height: auto;
-    perspective: none;
-  }
-  
-  .ambassador-info {
-    display: none;
-  }
-  
-  .ambassador-mobile-info {
-    display: block;
-    padding-top: 0.5rem;
-  }
-  
-  .ambassador-mobile-info .ambassador-role,
-  .ambassador-mobile-info .ambassador-university {
-    color: #f8fafc;
-    font-size: 0.9rem;
-  }
-  
-  .ambassador-image-container {
-    height: auto;
-  }
-  
-  .ambassador-card:hover .ambassador-image-container {
-    transform: none;
-  }
-
-  .benefits-grid {
-    gap: 2rem;
-    flex-direction: column;
-  }
-    
-  .benefit-card {
-    flex-direction: row;
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    text-align: left;
-    max-width: 100%;
-    gap: 1.5rem;
-    padding: 1rem;
-    background: rgba(5, 207, 207, 0.05);
-    border-radius: var(--radius);
-  }
-    
-  .benefit-icon-container {
-    flex-shrink: 0;
-    width: 80px;
-    height: 80px;
-  }
-    
-  .benefit-text {
-    text-align: left;
-    max-width: none;
-    font-size: 1rem;
-  }
+    gap: 8px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
+.ambassador-card:hover .ambassador-info {
+    opacity: 1;
+}

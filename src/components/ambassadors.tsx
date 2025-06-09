@@ -16,6 +16,13 @@ export function Ambassadors() {
       role: "AI Researcher",
       university: "Khalifa University",
       image: "/merouane-debah.jpg"
+    },
+    {
+      id: 2,
+      name: "Riadh Baghdadi",
+      role: "Researcher",
+      university: "NYU",
+      image: "/logo.png"
     }
   ];
 
@@ -38,6 +45,7 @@ export function Ambassadors() {
                   className="ambassador-image"
                 />
                 <div className="ambassador-info"> 
+                  <h3 className="ambassador-name">{ambassador.name}</h3>
                   <p className="ambassador-role">{ambassador.role}</p>
                   <p className="ambassador-university">{ambassador.university}</p>
                 </div>
