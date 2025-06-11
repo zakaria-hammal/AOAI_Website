@@ -160,12 +160,13 @@ event-icon-container {
 
 .event-card {
   background: linear-gradient(130deg, #000000, #092440);
-  border-radius: var(--radius);
   padding: 1.5rem;
   text-align: center;
   display: flex;
   transition: var(--transition);
-  border: 10px solid black;
+  border: 5px solid;
+  border-image: linear-gradient(130deg, #092440, #000);
+  border-image-slice: 1;
 }
 
 .event-card:hover {
@@ -562,7 +563,7 @@ main {
 .section-title::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
   width: 80px;
@@ -722,6 +723,8 @@ main {
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
+  width: 20rem;
+  height: 25rem;
 }
 
 .coach-card:hover {
@@ -912,7 +915,7 @@ main {
     opacity: 1;
 }
 
-@media (max-width: 768px) {Add commentMore actions
+@media (max-width: 768px) {
   .ambassador-card {
     height: auto;
     perspective: none;
