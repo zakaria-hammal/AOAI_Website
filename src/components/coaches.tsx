@@ -60,7 +60,7 @@ export function Coaches() {
     {
       name: "Firas Mohamed El Amine KIRAM",
       role: "Nice guy",
-      bio: "Student in INELEC",
+      bio: "Student in UMKB",
       image: "/firas.png" 
     }
   ];
