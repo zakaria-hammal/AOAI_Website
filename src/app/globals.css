@@ -915,7 +915,6 @@ main {
     opacity: 1;
 }
 
-/* Add this to your globals.css */
 /* ===== Mobile & Tablet Responsive Styles ===== */
 @media (max-width: 1024px) {
   /* Hide navigation bar */
@@ -923,11 +922,21 @@ main {
     display: none !important;
   }
 
-  /* Remove animations */
+  /* Remove all animations and hover effects */
   * {
     animation: none !important;
     transition: none !important;
     transform: none !important;
+  }
+  
+  /* Remove hover effects from all cards */
+  .benefit-card:hover .benefit-icon-container,
+  .coach-card:hover,
+  .event-card:hover,
+  .ambassador-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: none !important;
   }
 
   /* Adjust main content padding */
@@ -1003,7 +1012,7 @@ main {
     margin-top: 1rem;
   }
 
-  /* Coaches section */
+  /* Coaches section - remove hover effects */
   .coaches-grid {
     flex-direction: column;
     gap: 2rem;
@@ -1014,39 +1023,76 @@ main {
     max-width: 350px;
     height: auto;
     padding: 1.5rem;
+    box-shadow: none !important;
   }
 
-  /* AMBASSADORS SECTION - KEY CHANGES */
+  .ambassadors-section {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+
   .ambassadors-grid {
     flex-direction: column;
     height: auto;
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .ambassador-card {
-    position: relative;
-    height: auto;
-    flex: 1;
     display: flex;
     flex-direction: column;
+    height: auto;
+    overflow: visible;
+    cursor: default;
+    background: transparent;
+    border-radius: 12px;
+    overflow: hidden;
   }
 
   .ambassador-image-container {
     position: relative;
     width: 100%;
-    height: 300px; /* Fixed height for images */
+    height: 350px; /* Larger image height */
+    order: 1; /* Ensure image comes first */
   }
 
   .ambassador-info {
     position: relative;
     opacity: 1;
-    padding: 1rem;
-    background: linear-gradient(135deg, #000000, #092440);
+    padding: 1.5rem;
     display: block;
-    backdrop-filter: none;
+    text-align: center;
+    background: linear-gradient(135deg, #05CFCF, #2002C6);
+    color: white;
+    order: 2; /* Ensure info comes after image */
   }
 
-  /* Hide mobile-specific duplicate info */
+  .ambassador-name {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .ambassador-role {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .ambassador-university {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* Hide duplicate elements */
   .ambassador-card > h3.ambassador-name,
   .ambassador-mobile-info {
     display: none;
@@ -1087,24 +1133,6 @@ main {
   .event-title {
     font-size: 1.5rem;
   }
-
-  /* Financial table */
-  .sponsorsection {
-    padding: 1rem;
-  }
-  
-  /* Adjust font sizes */
-  h2 {
-    font-size: 2.2rem;
-  }
-  
-  .date-day {
-    font-size: 1.5rem;
-  }
-  
-  .date-month {
-    font-size: 0.9rem;
-  }
 }
 
 /* Tablet-specific adjustments */
@@ -1127,81 +1155,48 @@ main {
     width: calc(50% - 1rem);
   }
 
+  /* Ambassadors grid - 2 columns */
   .ambassadors-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+  
+  .ambassador-image-container {
+    height: 400px; /* Even larger on tablets */
+  }
+  
+  .ambassador-info {
+    padding: 1.8rem;
+  }
 }
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
-  /* Hero section */
-  .hero-join {
-    margin-top: 1rem;
-  }
-  
-  /* Event cards */
-  .event-card {
-    padding: 1rem;
-  }
-  
-  /* Ambassador cards */
-  .ambassador-info {
-    padding: 1rem;
+  /* Ambassador adjustments */
+  .ambassador-image-container {
+    height: 400px;
   }
   
   .ambassador-name {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
   
-  /* Footer icons */
-  .social-icons {
-    justify-content: center;
+  .ambassador-role {
+    font-size: 1.25rem;
   }
 }
 
 /* Very small screens */
 @media (max-width: 480px) {
-  .title-container {
-    padding: 1.5rem 1rem;
-  }
-  
-  .page-title {
-    font-size: 1.5rem;
-  }
-  
-  .mission-title {
-    font-size: 2rem;
-  }
-  
-  .mission-text {
-    font-size: 1rem;
-  }
-  
-  .benefit-card {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .event-date {
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 1rem;
-  }
-  
-  .coach-image {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .ambassador-card {
-    height: auto;
-  }
-  
   .ambassador-image-container {
     height: 250px;
   }
-}
+  
+  .ambassador-name {
+    font-size: 1.5rem;
+  }
+  
+  .ambassador-info {
+    padding: 1.2rem;
+  }}
