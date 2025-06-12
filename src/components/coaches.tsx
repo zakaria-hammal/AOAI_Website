@@ -56,6 +56,12 @@ export function Coaches() {
       role: "Nice guy",
       bio: "Student in INELEC",
       image: "/zakaria-hammal.jpeg" 
+    },
+    {
+      name: "Firas Mohamed El Amine KIRAM",
+      role: "Nice guy",
+      bio: "Student in INELEC",
+      image: "/zakaria-hammal.jpeg" 
     }
   ];
 

@@ -261,6 +261,9 @@ event-icon-container {
     align-items: center;
     justify-content: center;
     height: 1000px;
+    background-image: url('/abstract-lines.png'); /* Your image path */
+    background-size: cover;
+    background-position: center;
 }
 
 .logo-title-container {
