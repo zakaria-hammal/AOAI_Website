@@ -19,13 +19,13 @@ export function Coaches() {
       name: "Drici Mohammed Hachem",
       role: "Batata",
       bio: "Student in University of El oued",
-      image: "/mohammed-hachem-drici.jpeg"
+      image: "/hachem.png"
     },
     {
       name: "Raouf Ould Ali",
       role: "Olive Oil",
       bio: "AI student in ENSIA",
-      image: "/raouf-ould-ali.jpeg"
+      image: "/raouf.png"
     },
     {
       name: "Zakaria HAMMAL",
@@ -37,7 +37,7 @@ export function Coaches() {
       name: "Ali BEN CHIKH",
       role: "Nice guy",
       bio: "Master 2 in Applied Mathematics (Financial Mathematics) University of Tamanghasset",
-      image: "/zakaria-hammal.jpeg" 
+      image: "/ali.png" 
     },
     {
       name: "Assil BOUKHENNOUFA",
@@ -49,19 +49,19 @@ export function Coaches() {
       name: "Mohammed Al Ghazali MEGHABBER",
       role: "Nice guy",
       bio: "Student in ENSIA",
-      image: "/zakaria-hammal.jpeg" 
+      image: "/ghazali.png" 
     },
     {
       name: "Zakaria Ahmed LAHCINE",
       role: "Nice guy",
       bio: "Student in INELEC",
-      image: "/zakaria-hammal.jpeg" 
+      image: "/zaki_inelec.png" 
     },
     {
       name: "Firas Mohamed El Amine KIRAM",
       role: "Nice guy",
       bio: "Student in INELEC",
-      image: "/zakaria-hammal.jpeg" 
+      image: "/firas.png" 
     }
   ];
 
