@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://aoai-website.vercel.app/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
