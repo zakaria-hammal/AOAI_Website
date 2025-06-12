@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Head from "next/head";
 
 interface Coach {
   name: string;
@@ -37,16 +36,6 @@ export function Coaches() {
   ];
 
   return (
-    <>
-    <Head>
-      <title>Algerian Open AI - Advancing AI in Algeria</title>
-      <meta name="description" content="Join Algerian Open AI community of AI researchers, developers and enthusiasts working to advance artificial intelligence in Algeria" />
-      <meta name="keywords" content="AI Algeria, Algerian AI community, machine learning Algeria" />
-      <meta property="og:title" content="Algerian Open AI" />
-      <meta property="og:description" content="Advancing AI research and development in Algeria" />
-      <meta property="og:image" content="/og-image.jpg" />
-      <meta name="twitter:card" content="summary_large_image" />
-    </Head>
     <div className="coach-container">
       <div className="section-header">
         <h2 className="section-title">Our Expert Coaches</h2>
@@ -73,6 +62,5 @@ export function Coaches() {
         ))}
       </div>
     </div>
-    </>
   );
 }

@@ -1,17 +1,5 @@
-import Head from "next/head";
-
 export function Footer() {
   return (
-    <>
-    <Head>
-    <title>Algerian Open AI - Advancing AI in Algeria</title>
-      <meta name="description" content="Join Algerian Open AI community of AI researchers, developers and enthusiasts working to advance artificial intelligence in Algeria" />
-      <meta name="keywords" content="AI Algeria, Algerian AI community, machine learning Algeria" />
-      <meta property="og:title" content="Algerian Open AI" />
-      <meta property="og:description" content="Advancing AI research and development in Algeria" />
-      <meta property="og:image" content="/og-image.jpg" />
-      <meta name="twitter:card" content="summary_large_image" />
-    </Head>
     <footer className="aoai-footer">
       <div className="footer-container">
         <div className="footer-content">
@@ -63,6 +51,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-    </>
   );
 }
