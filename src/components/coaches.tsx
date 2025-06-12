@@ -32,6 +32,30 @@ export function Coaches() {
       role: "Nice guy",
       bio: "Student in USTHB",
       image: "/zakaria-hammal.jpeg" 
+    },
+    {
+      name: "Ali BEN CHIKH",
+      role: "Nice guy",
+      bio: "Master 2 in Applied Mathematics (Financial Mathematics) University of Tamanghasset",
+      image: "/zakaria-hammal.jpeg" 
+    },
+    {
+      name: "Assil BOUKHENNOUFA",
+      role: "Nice guy",
+      bio: "Student in ENSTA",
+      image: "/zakaria-hammal.jpeg" 
+    },
+    {
+      name: "Mohammed Al Ghazali MEGHABBER",
+      role: "Nice guy",
+      bio: "Student in ENSIA",
+      image: "/zakaria-hammal.jpeg" 
+    },
+    {
+      name: "Zakaria Ahmed LAHCINE",
+      role: "Nice guy",
+      bio: "Student in INELEC",
+      image: "/zakaria-hammal.jpeg" 
     }
   ];
 
