@@ -971,9 +971,15 @@ main {
     padding: 0 1rem;
   }
 
+  
   .mission-title {
     font-size: 2.5rem;
-    text-align: center;
+    padding-bottom: 15px; /* Reduce space for smaller text */
+  }
+    
+  .mission-title::after {
+    width: 100px; /* Shorter line for mobile */
+    height: 4px; /* Thinner line */
   }
 
   .mission-text {
