@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "AOAI",
   description: "The Algerian Olympiad in Artificial Intelignece selects the Algerian students who represent Algeria in the international high school AI competitions as IOAI",
-  keywords: "AI, IOAI, Artificial Intelignece, Python, Mathematics, Olympiad, Algeria"
+  keywords: "AI, IOAI, Artificial Intelignece, Python, Mathematics, Olympiad, Algeria",
 };
 
 export default function RootLayout({
