@@ -43,7 +43,7 @@ export function Coaches() {
       name: "Assil BOUKHENNOUFA",
       role: "Nice guy",
       bio: "Student in ENSTA",
-      image: "/zakaria-hammal.jpeg" 
+      image: "/assil.png" 
     },
     {
       name: "Mohammed Al Ghazali MEGHABBER",
