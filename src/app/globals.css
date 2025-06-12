@@ -290,18 +290,26 @@ event-icon-container {
 
 .mission-title {
     font-size: 5rem;
+    position: relative; /* Add relative positioning */
+    display: inline-block; /* Make the title a block to contain the pseudo-element */
+    text-align: center; /* Ensure center alignment */
+    width: 100%; /* Take full width */
+    padding-bottom: 20px; /* Add space for the underline */
 }
 
-.mission-title::after{
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(to right, #05CFCF, #2002C6);
-  border-radius: 2px;}
+/* Replace the existing ::after with this */
+.mission-title::after {
+    content: '';
+    position: absolute;
+    bottom: 20%; /* Position at bottom of title container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Precise centering */
+    width: 7rem; /* Wider line */
+    height: 6px; /* Thicker line */
+    background: linear-gradient(to right, #05CFCF, #2002C6);
+    border-radius: 3px; /* Rounded edges */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle depth */
+}
 
 .hero-join {
     margin-top: 2rem;
