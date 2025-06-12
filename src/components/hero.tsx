@@ -12,12 +12,6 @@ export function Hero() {
             <br />
             <br />
             <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             
             <div className="hero-join">
                 <h2 className="section-title">Why Join Us ?</h2>
