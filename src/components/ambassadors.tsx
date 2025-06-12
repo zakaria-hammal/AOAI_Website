@@ -36,7 +36,7 @@ export function Ambassadors() {
         
         <div className="ambassadors-grid">
           {ambassadors.map((ambassador) => (
-            <div className="ambassador-card">
+            <div key={ambassador.id} className="ambassador-card">
                 <div className="ambassador-image-container">
                     <Image 
                         src={ambassador.image}
