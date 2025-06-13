@@ -357,18 +357,21 @@ event-icon-container {
     text-align: center;
     gap: 1rem;
     max-width: 250px;
+    height: 100%;
 }
 
 .benefit-icon-container {
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     width: 170px;
     height: 170px;
     background: rgba(5, 207, 207, 0.1);
     border-radius: 50%;
-    padding: 1rem;
     transition: var(--transition);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
 }
 
 .benefit-card:hover .benefit-icon-container {
@@ -377,16 +380,17 @@ event-icon-container {
 }
 
 .benefit-header {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .benefit-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: #f8fafc;
     max-width: 200px;
     line-height: 1.4;
     text-align: center;
+    margin-top: auto;
 }
 
 .about-card {
@@ -976,6 +980,7 @@ main {
   
   /* Remove hover effects from all cards */
   .benefit-card:hover .benefit-icon-container,
+  .benefit-icon-container:hover,
   .coach-card:hover,
   .event-card:hover,
   .ambassador-card:hover {

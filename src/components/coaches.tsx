@@ -13,7 +13,7 @@ export function Coaches() {
       name: "Ilyes Mohammed",
       role: "Head Coach",
       bio: "College professor",
-      image: "/coach2.jpg"
+      image: "/ilyes.png"
     },
     {
       name: "Drici Mohammed Hachem",
