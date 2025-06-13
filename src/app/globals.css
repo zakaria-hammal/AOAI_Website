@@ -870,7 +870,7 @@ main {
 .ambassadors-grid {
     display: flex;
     gap: 0px;
-    height: 500px;
+    height: 750px;
 }
 
 .ambassador-card {
@@ -1101,6 +1101,7 @@ main {
     height: auto;
     gap: 2rem;
     max-width: 1200px;
+    height: 800px;
     margin: 0 auto;
   }
 
