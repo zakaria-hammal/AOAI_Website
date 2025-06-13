@@ -877,8 +877,8 @@ main {
   
   .head-coach-card,
   .coach-card {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 90%;
+    max-width: 90%;
     padding: 2.5rem 1.5rem;
   }
   
