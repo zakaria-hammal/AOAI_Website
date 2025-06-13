@@ -68,7 +68,6 @@ export function Coaches() {
         <div className="head-coaches-container">
           {headCoaches.map((coach, index) => (
             <div key={`head-${index}`} className="head-coach-card">
-              <div className="head-coach-badge">Head Coach</div>
               <div className="coach-content">
                 <h3 className="coach-name">
                   <span className="name-gradient">{coach.name}</span>
