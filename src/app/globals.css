@@ -1123,6 +1123,12 @@ main {
     order: 1; /* Ensure image comes first */
   }
 
+  .ambassador-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
   .ambassador-info {
     position: relative;
     opacity: 1;
