@@ -17,31 +17,9 @@ export function Events() {
             />
           </div>
           <div className="event-content">
-            <h3 className="event-title">Summer Camp</h3>
-            <p className="event-description">
-              First cometition.
-            </p>
-          </div>
-          <div className="event-date">
-            <span className="date-day">Coming</span>
-            <span className="date-month">Soon</span>
-          </div>
-        </div>
-        
-        <div className="event-card">
-          <div className="event-icon-container">
-            <Image 
-                src="/logo-purple.png" 
-                width={80} 
-                height={80} 
-                alt="Career"
-                className="benefit-icon"
-            />
-          </div>
-          <div className="event-content">
             <h3 className="event-title">Summer STEM Camp</h3>
             <p className="event-description">
-              Second competition
+                Introduction to AI
             </p>
           </div>
           <div className="event-date">
@@ -86,7 +64,7 @@ export function Events() {
           <div className="event-content">
             <h3 className="event-title">Round One</h3>
             <p className="event-description">
-              Learn from industry experts about the latest trends in data science and analytics.
+                First Test 
             </p>
           </div>
           <div className="event-date">
@@ -108,7 +86,7 @@ export function Events() {
           <div className="event-content">
             <h3 className="event-title">Round Two</h3>
             <p className="event-description">
-              Learn from industry experts about the latest trends in data science and analytics.
+                Second Test
             </p>
           </div>
           <div className="event-date">

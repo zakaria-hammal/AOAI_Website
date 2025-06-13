@@ -137,15 +137,6 @@ event-icon-container {
   padding-right: 1.5rem;
 }
 
-.event-card {
-  display: flex;
-  align-items: center;
-}
-
-.events-grid {
-  gap: 2.5rem;
-}
-
 .upcoming-events {
   max-width: 1200px;
   margin: 4rem auto;
@@ -169,6 +160,7 @@ event-icon-container {
   background:
     linear-gradient(130deg, #000000, #092440) padding-box,
     linear-gradient(130deg, #092440, #000) border-box;
+  width: 1000px;
 }
 
 .event-card:hover {
@@ -206,13 +198,13 @@ event-icon-container {
 
 .event-title {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 0.75rem;
 }
 
 .event-description {
   color: var(--color-text-light);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -676,13 +668,6 @@ main {
   color: #D9D9D9;
   margin-bottom: 1rem;
   line-height: 1.3;
-}
-
-.event-title {
-  text-align: center;
-  color: var(--color-dark);
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
 }
 
 .course-description {
