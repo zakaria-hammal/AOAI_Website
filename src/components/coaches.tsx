@@ -1,69 +1,60 @@
-import Image from "next/image";
-
 interface Coach {
   name: string;
   role: string;
   bio: string;
-  image: string;
 }
 
 export function Coaches() {
   const coaches: Coach[] = [
     {
-      name: "Ilyes Mohammed",
+      name: "Ilyes Mohammed LAKHAL",
       role: "Head Coach",
-      bio: "College professor",
-      image: "/ilyes.png"
+      bio: "Research Fellow in computer vision and Deep learning",
     },
     {
       name: "Drici Mohammed Hachem",
       role: "Coach",
-      bio: "Student in University of El oued",
-      image: "/hachem.png"
+      bio: "Computer Science Student in in UEHL",
     },
     {
       name: "Raouf Ould Ali",
       role: "Coach",
       bio: "AI student in ENSIA",
-      image: "/raouf.png"
     },
     {
       name: "Zakaria HAMMAL",
       role: "Coach",
-      bio: "Student in USTHB",
-      image: "/zakaria-hammal.jpeg" 
+      bio: "Computer Science Student in USTHB",
     },
     {
       name: "Ali BEN CHIKH",
       role: "Coach",
-      bio: "Master 2 in Applied Mathematics (Financial Mathematics) University of Tamanghasset",
-      image: "/ali.png" 
+      bio: "Graduate in Applied Mathematics University of Tamanghasset",
     },
     {
       name: "Assil BOUKHENNOUFA",
       role: "Coach",
-      bio: "Student in ENSTA",
-      image: "/assil.png" 
+      bio: "Computer Science Student in ENSTA",
     },
     {
       name: "Mohammed Al Ghazali MEGHABBER",
       role: "Coach",
-      bio: "Student in ENSIA",
-      image: "/ghazali.png" 
+      bio: "AI Student in ENSIA",
     },
     {
       name: "Zakaria Ahmed LAHCINE",
       role: "Coach",
-      bio: "Student in INELEC",
-      image: "/zaki_inelec.png" 
+      bio: "Electrical Engineering Student in INELEC",
     },
     {
       name: "Firas Mohamed El Amine KIRAM",
       role: "Coach",
-      bio: "Student in UMKB",
-      image: "/firas.png" 
+      bio: "Computer Science Student in UMKB",
     }
   ];
+
+  const headCoaches = coaches.filter(coach => coach.role === "Head Coach");
+  const otherCoaches = coaches.filter(coach => coach.role !== "Head Coach");
 
   return (
     <div className="coach-container">
@@ -72,42 +63,39 @@ export function Coaches() {
         <p className="section-subtitle">Learn from the best minds in Algerian AI</p>
       </div>
       
-      <div className="coaches-grid">
-        {coaches.map((coach, index) => (
-          coach.role === "Head Coach" ? (
-            <div key={index} className="head-coach-container">
-              <div className="coach-card head-coach">
-                <Image
-                  src={coach.image}
-                  width={150}
-                  height={150}
-                  alt={coach.name}
-                  className="rounded-full object-cover coach-image"
-                />
-                <div className="coach-content">
-                  <h3 className="coach-name">{coach.name}</h3>
-                  <p className="coach-role">{coach.role}</p>
-                  <p className="coach-bio">{coach.bio}</p>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div key={index} className="coach-card">
-              <Image
-                src={coach.image}
-                width={150}
-                height={150}
-                alt={coach.name}
-                className="rounded-full object-cover coach-image"
-              />
+      <div className="coaches-container">
+        {/* Head coaches at top center */}
+        <div className="head-coaches-container">
+          {headCoaches.map((coach, index) => (
+            <div key={`head-${index}`} className="head-coach-card">
+              <div className="head-coach-badge">Head Coach</div>
               <div className="coach-content">
-                <h3 className="coach-name">{coach.name}</h3>
+                <h3 className="coach-name">
+                  <span className="name-gradient">{coach.name}</span>
+                </h3>
                 <p className="coach-role">{coach.role}</p>
                 <p className="coach-bio">{coach.bio}</p>
               </div>
+              <div className="glow-effect"></div>
             </div>
-          )
-        ))}
+          ))}
+        </div>
+        
+        {/* Other coaches in flex wrap grid */}
+        <div className="coaches-grid">
+          {otherCoaches.map((coach, index) => (
+            <div key={index} className="coach-card">
+              <div className="coach-content">
+                <h3 className="coach-name">
+                  <span className="name-gradient">{coach.name}</span>
+                </h3>
+                <p className="coach-role">{coach.role}</p>
+                <p className="coach-bio">{coach.bio}</p>
+              </div>
+              <div className="glow-effect"></div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

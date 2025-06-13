@@ -66,7 +66,7 @@ export function Events() {
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
-                src="/logo-orange.png" 
+                src="/Orange_1.png" 
                 width={80} 
                 height={80} 
                 alt="Career"
