@@ -13,8 +13,8 @@ export function Ambassadors() {
     {
       id: 1,
       name: "Merouane Debah",
-      role: "AI Researcher",
-      university: "Khalifa University",
+      role: "Director of the KU 6G Research center",
+      university: "Professor at Khalifa University",
       image: "/merouane-debah.jpg"
     }
   ];

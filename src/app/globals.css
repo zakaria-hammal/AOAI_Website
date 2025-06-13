@@ -435,6 +435,7 @@ event-icon-container {
   position: fixed; 
   bottom: 0;
   height: 60px;
+  margin-bottom: 10px;
   /* Remove sticky properties */
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -887,7 +888,7 @@ main {
   margin-top: 3rem;
   text-align: center;
   font-size: 1.5rem;
-  color: #afced3;
+  color: #c3c3c3;
   padding: 1rem 0;
 }
 
@@ -896,7 +897,7 @@ main {
 }
 
 .sponsors-section-footer a {
-  color: var(--accent-color);
+  color: #02ffff;
   text-decoration: none;
   position: relative;
   transition: var(--transition);
@@ -914,7 +915,7 @@ main {
 }
 
 .sponsors-section-footer a:hover {
-  color: white;
+  color: #02ffff;;
 }
 
 .sponsors-section-footer a:hover::after {
