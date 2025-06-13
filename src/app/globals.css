@@ -164,9 +164,11 @@ event-icon-container {
   text-align: center;
   display: flex;
   transition: var(--transition);
-  border: 5px solid;
-  border-image: linear-gradient(130deg, #092440, #000);
-  border-image-slice: 1;
+  border-radius: 10px;
+  border: 5px solid transparent;
+  background:
+    linear-gradient(130deg, #000000, #092440) padding-box,
+    linear-gradient(130deg, #092440, #000) border-box;
 }
 
 .event-card:hover {
@@ -196,7 +198,7 @@ event-icon-container {
 
 .date-month {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #D9D9D9;
@@ -272,10 +274,9 @@ event-icon-container {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/abstract-lines.png'); /* Your image path */
+  background-image: url('/abstract-lines-2.png'); /* Your image path */
   background-size: cover;
   background-position: center;
-  opacity: 0.5; /* Adjust transparency */
   z-index: -1;
 }
 
@@ -362,8 +363,8 @@ event-icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    height: 170px;
     background: rgba(5, 207, 207, 0.1);
     border-radius: 50%;
     padding: 1rem;
@@ -791,6 +792,32 @@ main {
   line-height: 1.6;
 }
 
+.head-coach-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.head-coach {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.head-coach::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(130deg, #05CFCF, #2002C6);
+  border-radius: var(--radius);
+  z-index: -1;
+}
+
 .sponsors-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1057,6 +1084,14 @@ main {
     height: auto;
     padding: 1.5rem;
     box-shadow: none !important;
+  }
+
+  .head-coach-container {
+    margin-bottom: 1rem;
+  }
+  
+  .head-coach {
+    max-width: 100%;
   }
 
   .ambassadors-section {

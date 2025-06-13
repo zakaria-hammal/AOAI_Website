@@ -9,7 +9,7 @@ export function Events() {
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
-                src="/logo-cyan-blue.png" 
+                src="/logo-purple.png" 
                 width={80} 
                 height={80} 
                 alt="Career"
@@ -23,30 +23,8 @@ export function Events() {
             </p>
           </div>
           <div className="event-date">
-            <span className="date-day">15</span>
-            <span className="date-month">JUN</span>
-          </div>
-        </div>
-        
-        <div className="event-card">
-          <div className="event-icon-container">
-            <Image 
-                src="/logo-silver.png" 
-                width={80} 
-                height={80} 
-                alt="Career"
-                className="benefit-icon"
-            />
-          </div>
-          <div className="event-content">
-            <h3 className="event-title">Round 1</h3>
-            <p className="event-description">
-              Second competition
-            </p>
-          </div>
-          <div className="event-date">
-            <span className="date-day">22</span>
-            <span className="date-month">JUL</span>
+            <span className="date-day">Coming</span>
+            <span className="date-month">Soon</span>
           </div>
         </div>
         
@@ -61,17 +39,83 @@ export function Events() {
             />
           </div>
           <div className="event-content">
-            <h3 className="event-title">Round 2</h3>
+            <h3 className="event-title">Summer STEM Camp</h3>
+            <p className="event-description">
+              Second competition
+            </p>
+          </div>
+          <div className="event-date">
+            <span className="date-day">Coming</span>
+            <span className="date-month">Soon</span>
+          </div>
+        </div>
+        
+        <div className="event-card">
+          <div className="event-icon-container">
+            <Image 
+                src="/logo-red.png" 
+                width={80} 
+                height={80} 
+                alt="Career"
+                className="benefit-icon"
+            />
+          </div>
+          <div className="event-content">
+            <h3 className="event-title">First competition</h3>
             <p className="event-description">
               Final Test
             </p>
           </div>
           <div className="event-date">
-            <span className="date-day">10</span>
-            <span className="date-month">AUG</span>
+            <span className="date-day">To Be</span>
+            <span className="date-month">Announced</span>
           </div>
         </div>
         
+        <div className="event-card">
+          <div className="event-icon-container">
+            <Image 
+                src="/logo-silver.png" 
+                width={80} 
+                height={80} 
+                alt="Career"
+                className="benefit-icon"
+            />
+
+          </div>
+          <div className="event-content">
+            <h3 className="event-title">Round One</h3>
+            <p className="event-description">
+              Learn from industry experts about the latest trends in data science and analytics.
+            </p>
+          </div>
+          <div className="event-date">
+            <span className="date-day">To Be</span>
+            <span className="date-month">Announced</span>
+          </div>
+        </div>
+        <div className="event-card">
+          <div className="event-icon-container">
+            <Image 
+                src="/logo-silver.png" 
+                width={80} 
+                height={80} 
+                alt="Career"
+                className="benefit-icon"
+            />
+
+          </div>
+          <div className="event-content">
+            <h3 className="event-title">Round Two</h3>
+            <p className="event-description">
+              Learn from industry experts about the latest trends in data science and analytics.
+            </p>
+          </div>
+          <div className="event-date">
+            <span className="date-day">To Be</span>
+            <span className="date-month">Announced</span>
+          </div>
+        </div>
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
@@ -85,13 +129,10 @@ export function Events() {
           </div>
           <div className="event-content">
             <h3 className="event-title">Team Selection Test</h3>
-            <p className="event-description">
-              Learn from industry experts about the latest trends in data science and analytics.
-            </p>
           </div>
           <div className="event-date">
-            <span className="date-day">05</span>
-            <span className="date-month">SEP</span>
+            <span className="date-day">To Be</span>
+            <span className="date-month">Announced</span>
           </div>
         </div>
       </div>
