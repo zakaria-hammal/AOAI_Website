@@ -16,13 +16,6 @@ export function Ambassadors() {
       role: "AI Researcher",
       university: "Khalifa University",
       image: "/merouane-debah.jpg"
-    },
-    {
-      id: 2,
-      name: "Riadh Baghdadi",
-      role: "Researcher",
-      university: "NYU",
-      image: "/logo.png"
     }
   ];
 
