@@ -12,7 +12,7 @@ export function Coaches() {
       bio: "Research Fellow in computer vision and Deep learning",
     },
     {
-      name: "Mohammed Hachem Drici",
+      name: "Mohammed Hachem DRICI",
       role: "Coach",
       bio: "Computer Science Student in in UEHL",
     },
