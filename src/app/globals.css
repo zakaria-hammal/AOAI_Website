@@ -868,29 +868,6 @@ main {
   max-width: 1400px;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .head-coaches-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .head-coach-card,
-  .coach-card {
-    min-width: 90%;
-    max-width: 90%;
-    padding: 2.5rem 1.5rem;
-  }
-  
-  .name-gradient {
-    font-size: 1.8rem;
-  }
-  
-  .coach-role {
-    font-size: 1.2rem;
-  }
-}
-
 .sponsors-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1166,6 +1143,26 @@ main {
     font-size: 1rem;
   }
 
+  .head-coaches-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .head-coach-card,
+  .coach-card {
+    min-width: 100%;
+    max-width: 90%;
+    padding: 2rem 1.5rem;
+  }
+  
+  .name-gradient {
+    font-size: 1.8rem;
+  }
+  
+  .coach-role {
+    font-size: 1.2rem;
+  }
+
   .ambassadors-section {
     padding: 2rem 1rem;
     width: 100%;
@@ -1286,24 +1283,26 @@ main {
 /* Tablet-specific adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
   .title-container {
-    padding: 3rem 2rem;
+    padding: 5rem 3rem;
   }
 
   .mission-title {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
-  .head-coaches-container {
-    flex-direction: column;
-    align-items: center;
+  .mission-text {
+    font-size: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
-  
-  .head-coach {
-    max-width: 100%;
+    
+  .event-card {
+    width: 40rem;
   }
-  
+
   .coach-card {
-    min-width: 100%;
+    height: 50%;
+    width: 80%;
   }
 
   /* Ambassadors grid - 2 columns */
