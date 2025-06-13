@@ -160,7 +160,10 @@ event-icon-container {
   background:
     linear-gradient(130deg, #000000, #092440) padding-box,
     linear-gradient(130deg, #092440, #000) border-box;
-  width: 1000px;
+  width: 1000px; 
+  align-items: center;
+  justify-content: center;
+
 }
 
 .event-card:hover {

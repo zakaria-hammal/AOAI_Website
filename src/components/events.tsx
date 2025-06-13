@@ -18,9 +18,6 @@ export function Events() {
           </div>
           <div className="event-content">
             <h3 className="event-title">Summer STEM Camp</h3>
-            <p className="event-description">
-                Introduction to AI
-            </p>
           </div>
           <div className="event-date">
             <span className="date-day">Coming</span>
@@ -39,10 +36,7 @@ export function Events() {
             />
           </div>
           <div className="event-content">
-            <h3 className="event-title">First competition</h3>
-            <p className="event-description">
-              Final Test
-            </p>
+            <h3 className="event-title">Post-Camp Evaluation</h3>
           </div>
           <div className="event-date">
             <span className="date-day">To Be</span>
@@ -63,9 +57,6 @@ export function Events() {
           </div>
           <div className="event-content">
             <h3 className="event-title">Round One</h3>
-            <p className="event-description">
-                First Test 
-            </p>
           </div>
           <div className="event-date">
             <span className="date-day">To Be</span>
@@ -85,9 +76,6 @@ export function Events() {
           </div>
           <div className="event-content">
             <h3 className="event-title">Round Two</h3>
-            <p className="event-description">
-                Second Test
-            </p>
           </div>
           <div className="event-date">
             <span className="date-day">To Be</span>
