@@ -706,100 +706,189 @@ main {
   fill: currentColor;
 }
 
-.course-button {
-  display: inline-flex;
+.coaches-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: var(--radius);
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
   width: 100%;
+  padding: 0 1rem;
 }
 
-.course-button:hover {
-  background-color: var(--secondary-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
+.head-coaches-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.head-coach-card {
+  position: relative;
+  background: rgba(9, 36, 64, 0.7);
+  border-radius: 16px;
+  padding: 3rem 2.5rem 2.5rem;
+  min-width: 400px;
+  max-width: 700px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(32, 2, 198, 0.4);
+  box-shadow: 0 10px 30px rgba(5, 207, 207, 0.1);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.head-coach-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #05CFCF, #2002C6);
+  color: white;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(5, 207, 207, 0.4);
+  letter-spacing: 1px;
+}
+
+.coach-card {
+  position: relative;
+  background: rgba(9, 36, 64, 0.7);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(5, 207, 207, 0.3);
+  box-shadow: 0 8px 25px rgba(5, 207, 207, 0.1);
+  overflow: hidden;
+  z-index: 1;
+  height: 20rem;
+  width: 25rem;
+}
+
+.coach-card:hover,
+.head-coach-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(5, 207, 207, 0.3);
+}
+
+.coach-card:hover {
+  border-color: rgba(5, 207, 207, 0.7);
+}
+
+.head-coach-card:hover {
+  border-color: rgba(32, 2, 198, 0.7);
+}
+
+.coach-card:hover .glow-effect,
+.head-coach-card:hover .glow-effect {
+  opacity: 1;
+}
+
+.coach-card::after,
+.head-coach-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #05CFCF, #2002C6);
+  opacity: 0.7;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.coach-card:hover::after,
+.head-coach-card:hover::after {
+  transform: scaleX(1);
+}
+
+.coach-name {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.name-gradient {
+  background: linear-gradient(90deg, #05CFCF, #2002C6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.2rem;
+  font-weight: 750;
+  display: inline-block;
+  letter-spacing: -0.5px;
+  transition: all 0.3s ease;
+}
+
+.coach-card:hover .name-gradient,
+.head-coach-card:hover .name-gradient {
+  color: linear-gradient(90deg, #0FF, #2002C6);
+}
+
+.coach-role {
+  color: #0C83FF;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  position: relative;
+  display: inline-block;
+}
+
+.coach-role::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(to right, #05CFCF, #2002C6);
+  border-radius: 2px;
+}
+
+.coach-bio {
+  color: #afced3;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .coaches-grid {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: 3rem;
-  margin-top: 3rem;
-}
-
-.coach-card {
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 2rem;
-  text-align: center;
-  transition: var(--transition);
-  width: 20rem;
-  height: 25rem;
-}
-
-.coach-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px #2002C6;
-}
-
-.coach-image {
-  margin: 0 auto 1.5rem;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid var(--primary-color);
-}
-
-.coach-name {
-  font-size: 1.5rem;
-  color: #D9D9D9;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.coach-name::after{
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(to right, #05CFCF, #2002C6);
-  border-radius: 2px;
-}
-
-.coach-role {
-  color: #0C83FF;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.coach-bio {
-  color: white;
-  line-height: 1.6;
-}
-
-.head-coach-container {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
+  gap: 2.5rem;
   width: 100%;
-  margin-bottom: 2rem;
+  max-width: 1400px;
 }
 
-.head-coach {
-  width: 20rem;
-  height: 25rem;
-  max-width: 500px;
-  position: relative;
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .head-coaches-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .head-coach-card,
+  .coach-card {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .name-gradient {
+    font-size: 1.8rem;
+  }
+  
+  .coach-role {
+    font-size: 1.2rem;
+  }
 }
 
 .sponsors-container {
@@ -1001,7 +1090,6 @@ main {
     padding: 0 1rem;
   }
 
-  
   .mission-title {
     margin-top: 5rem;
     font-size: 2.5rem;
@@ -1041,6 +1129,7 @@ main {
   .event-card {
     flex-direction: column;
     padding: 1.5rem;
+    width: 20rem;
   }
 
   .event-icon-container {
@@ -1057,26 +1146,24 @@ main {
     margin-top: 1rem;
   }
 
-  /* Coaches section - remove hover effects */
   .coaches-grid {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .coach-card {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    padding: 1.5rem;
-    box-shadow: none !important;
-  }
-
-  .head-coach-container {
-    margin-bottom: 1rem;
+    grid-template-columns: 1fr;
   }
   
-  .head-coach {
-    max-width: 100%;
+  .coach-card.head-coach {
+    grid-column: 1;
+  }
+  
+  .coach-name {
+    font-size: 1.5rem;
+  }
+  
+  .coach-role {
+    font-size: 1.2rem;
+  }
+  
+  .coach-bio {
+    font-size: 1rem;
   }
 
   .ambassadors-section {
@@ -1206,14 +1293,17 @@ main {
     font-size: 3rem;
   }
 
-  .coaches-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .head-coaches-container {
+    flex-direction: column;
+    align-items: center;
   }
-
+  
+  .head-coach {
+    max-width: 100%;
+  }
+  
   .coach-card {
-    width: calc(50% - 1rem);
+    min-width: 100%;
   }
 
   /* Ambassadors grid - 2 columns */
