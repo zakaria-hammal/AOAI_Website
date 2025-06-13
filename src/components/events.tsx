@@ -28,7 +28,7 @@ export function Events() {
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
-                src="/logo-red.png" 
+                src="/logo-green.png" 
                 width={80} 
                 height={80} 
                 alt="Career"
@@ -47,7 +47,7 @@ export function Events() {
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
-                src="/logo-silver.png" 
+                src="/logo-cyan-blue.png" 
                 width={80} 
                 height={80} 
                 alt="Career"
@@ -66,7 +66,7 @@ export function Events() {
         <div className="event-card">
           <div className="event-icon-container">
             <Image 
-                src="/logo-silver.png" 
+                src="/logo-orange.png" 
                 width={80} 
                 height={80} 
                 alt="Career"
