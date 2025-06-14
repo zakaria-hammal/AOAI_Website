@@ -934,13 +934,13 @@ main {
     overflow: hidden;
     flex: 1;
     transition: flex 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(9, 36, 64, 0.7);
     cursor: pointer;
 }
 
 .ambassador-card:hover {
     flex: 2;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 30px rgba(9, 36, 64, 0.7);
 }
 
 .ambassador-image-container {
