@@ -24,10 +24,12 @@ export default async function Home() {
     <section id="coaches">
         <Coaches />
     </section>
-
+    
+    {/*
     <section id="ambassadors">
         <Ambassadors />
     </section>
+    */}
 
     <section id="sponsors">
         <Sponsors />
