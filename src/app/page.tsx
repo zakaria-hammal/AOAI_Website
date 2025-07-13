@@ -4,7 +4,6 @@ import { Coaches } from "@/components/coaches";
 import { Sponsors } from "@/components/sponsors";
 import { Hero } from "@/components/hero";
 import { Title } from "@/components/title";
-import { Ambassadors } from "@/components/ambassadors";
 import { Footer } from "@/components/footer";
 
 export default async function Home() {
