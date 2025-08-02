@@ -26,6 +26,7 @@ export function Sponsors() {
           </p>
         </div>
 
+        <h3 className="platinuim-sponsors-title">Platinium Sponsors</h3>
         <div className="sponsors-grid">
           {sponsors.map((sponsor, index) => (
             <a
@@ -37,8 +38,8 @@ export function Sponsors() {
             >
               <Image
                 src={sponsor.logo}
-                width={250}
-                height={150}
+                width={300}
+                height={200}
                 alt={sponsor.name}
                 className="sponsor-logo"
               />

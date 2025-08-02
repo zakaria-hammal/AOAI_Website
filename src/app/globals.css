@@ -891,6 +891,11 @@ main {
     padding: 0 2rem;
 }
 
+.platinuim-sponsors-title {
+    font-size: 3.5rem;
+    color: rgb(229, 228, 226);
+}
+
 .sponsors-grid {
     display: flex;
     gap: 3rem;
