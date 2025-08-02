@@ -12,7 +12,7 @@ export function Sponsors() {
     {
       name: "Huawei",
       logo: "/Huawei-Logo.png",
-      url: "https://algierstech.dz",
+      url: "https://www.huawei.com/en/",
     },
   ];
 
