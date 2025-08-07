@@ -119,16 +119,6 @@ body {
     padding: 0 2rem;
 }
 
-.section-title {
-    text-align: center;
-    color: #afced3;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -585,11 +575,13 @@ button.loading::after {
 }
 
 .section-title {
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
-    margin-bottom: 1rem;
     position: relative;
     display: inline-block;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100%;
 }
 
 main {
@@ -892,8 +884,9 @@ main {
 }
 
 .platinuim-sponsors-title {
-    font-size: 3.5rem;
-    color: rgb(229, 228, 226);
+    font-size: 4.5rem;
+    font-weight: 550;
+    color: #e2e3e5;
 }
 
 .sponsors-grid {

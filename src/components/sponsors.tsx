@@ -11,7 +11,7 @@ export function Sponsors() {
   const sponsors: Sponsor[] = [
     {
       name: "Huawei",
-      logo: "/Huawei-Logo.png",
+      logo: "/huawei_sponsorship.svg",
       url: "https://www.huawei.com/en/",
     },
   ];
@@ -38,8 +38,8 @@ export function Sponsors() {
             >
               <Image
                 src={sponsor.logo}
-                width={300}
-                height={200}
+                width={400}
+                height={300}
                 alt={sponsor.name}
                 className="sponsor-logo"
               />
