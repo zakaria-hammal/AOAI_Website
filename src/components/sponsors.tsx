@@ -38,8 +38,8 @@ export function Sponsors() {
             >
               <Image
                 src={sponsor.logo}
-                width={400}
-                height={300}
+                width={500}
+                height={400}
                 alt={sponsor.name}
                 className="sponsor-logo"
               />
