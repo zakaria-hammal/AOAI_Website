@@ -32,11 +32,6 @@ export function Coaches() {
       bio: "Graduate in Applied Mathematics University of Tamanghasset",
     },
     {
-      name: "Assil BOUKHENNOUFA",
-      role: "Coach",
-      bio: "Computer Science Student in ENSTA",
-    },
-    {
       name: "Mohammed Al Ghazali MEGHABBER",
       role: "Coach",
       bio: "AI Student in ENSIA",
@@ -46,23 +41,20 @@ export function Coaches() {
       role: "Coach",
       bio: "Electrical Engineering Student in INELEC",
     },
-    {
-      name: "Firas Mohamed El Amine KIRAM",
-      role: "Coach",
-      bio: "Computer Science Student in UMKB",
-    }
   ];
 
-  const headCoaches = coaches.filter(coach => coach.role === "Head Coach");
-  const otherCoaches = coaches.filter(coach => coach.role !== "Head Coach");
+  const headCoaches = coaches.filter((coach) => coach.role === "Head Coach");
+  const otherCoaches = coaches.filter((coach) => coach.role !== "Head Coach");
 
   return (
     <div className="coach-container">
       <div className="section-header">
         <h2 className="section-title">Our Expert Coaches</h2>
-        <p className="section-subtitle">Learn from the best minds in Algerian AI</p>
+        <p className="section-subtitle">
+          Learn from the best minds in Algerian AI
+        </p>
       </div>
-      
+
       <div className="coaches-container">
         {/* Head coaches at top center */}
         <div className="head-coaches-container">
@@ -79,7 +71,7 @@ export function Coaches() {
             </div>
           ))}
         </div>
-        
+
         {/* Other coaches in flex wrap grid */}
         <div className="coaches-grid">
           {otherCoaches.map((coach, index) => (
