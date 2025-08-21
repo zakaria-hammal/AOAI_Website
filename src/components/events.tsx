@@ -9,6 +9,25 @@ export function Events() {
         <div className="event-card">
           <div className="event-icon-container">
             <Image
+              src="/logo-silver.png"
+              width={80}
+              height={80}
+              alt="Career"
+              className="benefit-icon"
+            />
+          </div>
+          <div className="event-content">
+            <h3 className="event-title">Pre-Selection Test</h3>
+          </div>
+          <div className="event-date">
+            <span className="date-day">15</span>
+            <span className="date-month">August</span>
+          </div>
+        </div>
+
+        <div className="event-card">
+          <div className="event-icon-container">
+            <Image
               src="/logo-purple.png"
               width={80}
               height={80}
