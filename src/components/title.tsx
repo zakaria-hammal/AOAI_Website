@@ -17,5 +17,6 @@ export function Title() {
                The Algerian Olympiad in Artificial Intelligence
            </h1>
        </div>
-   </div>   ) 
+   </div>
+   ) 
 }

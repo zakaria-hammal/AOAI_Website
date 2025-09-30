@@ -12,12 +12,6 @@ export function Hero() {
             <br />
             <br />
             <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             
             <div className="hero-join">
                 <h2 className="section-title">Why Join Us ?</h2>
@@ -26,8 +20,8 @@ export function Hero() {
                         <div className="benefit-icon-container">
                             <Image 
                                 src="/PI.png" 
-                                width={90} 
-                                height={90} 
+                                width={771} 
+                                height={768} 
                                 alt="Learning"
                                 className="benefit-icon"
                             />
@@ -38,8 +32,8 @@ export function Hero() {
                         <div className="benefit-icon-container">
                             <Image 
                                 src="/ML.png" 
-                                width={90} 
-                                height={90} 
+                                width={771} 
+                                height={768} 
                                 alt="Competition"
                                 className="benefit-icon"
                             />
@@ -50,8 +44,8 @@ export function Hero() {
                         <div className="benefit-icon-container">
                             <Image 
                                 src="/NEURAL.png" 
-                                width={90} 
-                                height={90} 
+                                width={771} 
+                                height={768} 
                                 alt="Career"
                                 className="benefit-icon"
                             />

@@ -13,8 +13,8 @@ export function Ambassadors() {
     {
       id: 1,
       name: "Merouane Debah",
-      role: "AI Researcher",
-      university: "Khalifa University",
+      role: "Director of the KU 6G Research center",
+      university: "Professor at Khalifa University",
       image: "/merouane-debah.jpg"
     }
   ];
@@ -30,23 +30,19 @@ export function Ambassadors() {
         <div className="ambassadors-grid">
           {ambassadors.map((ambassador) => (
             <div key={ambassador.id} className="ambassador-card">
-              <div className="ambassador-image-container">
-                <Image 
-                  src={ambassador.image}
-                  fill
-                  alt={ambassador.name}
-                  className="ambassador-image"
-                />
-                <div className="ambassador-info"> 
-                  <p className="ambassador-role">{ambassador.role}</p>
-                  <p className="ambassador-university">{ambassador.university}</p>
+                <div className="ambassador-image-container">
+                    <Image 
+                        src={ambassador.image}
+                        fill
+                        alt={ambassador.name}
+                        className="ambassador-image"
+                    />
                 </div>
-              </div>
-              <h3 className="ambassador-name">{ambassador.name}</h3>
-              <div className="ambassador-mobile-info">
-                <p className="ambassador-role">{ambassador.role}</p>
-                <p className="ambassador-university">{ambassador.university}</p>
-              </div>
+                <div className="ambassador-info"> 
+                    <h3 className="ambassador-name">{ambassador.name}</h3>
+                    <p className="ambassador-role">{ambassador.role}</p>
+                    <p className="ambassador-university">{ambassador.university}</p>
+                 </div>
             </div>
           ))}
         </div>
