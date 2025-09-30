@@ -7,7 +7,6 @@ RUN npm ci
 COPY . .
 
 RUN npm run build
-RUN npm run export
 
 FROM node:18-alpine AS runner
 WORKDIR /app
