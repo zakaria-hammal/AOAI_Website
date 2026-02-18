@@ -58,8 +58,8 @@ export function Events() {
             <h3 className="event-title">Post-Camp Evaluation</h3>
           </div>
           <div className="event-date">
-            <span className="date-day">To Be</span>
-            <span className="date-month">Announced</span>
+            <span className="date-day">8</span>
+            <span className="date-month">September</span>
           </div>
         </div>
 
@@ -77,8 +77,8 @@ export function Events() {
             <h3 className="event-title">Round One</h3>
           </div>
           <div className="event-date">
-            <span className="date-day">To Be</span>
-            <span className="date-month">Announced</span>
+            <span className="date-day">25</span>
+            <span className="date-month">December</span>
           </div>
         </div>
         <div className="event-card">
@@ -95,8 +95,8 @@ export function Events() {
             <h3 className="event-title">Round Two</h3>
           </div>
           <div className="event-date">
-            <span className="date-day">To Be</span>
-            <span className="date-month">Announced</span>
+            <span className="date-day"></span>
+            <span className="date-month">Soon</span>
           </div>
         </div>
         <div className="event-card">

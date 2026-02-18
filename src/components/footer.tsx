@@ -5,7 +5,7 @@ export function Footer() {
         <div className="footer-content">
           <div className="social-links">
             <a 
-              href="https://discord.gg/KxjRUftv"
+              href="https://discord.gg/j7ayFG6K"
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link discord"

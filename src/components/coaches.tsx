@@ -46,6 +46,11 @@ export function Coaches() {
       role: "Coach",
       bio: "IOI participant, computer science student at esi-sba",
     },
+    {
+      name: "Rayan OUALI",
+      role: "Coach",
+      bio: "2CP, ENSIA",
+    },
   ];
 
   const headCoaches = coaches.filter((coach) => coach.role === "Head Coach");

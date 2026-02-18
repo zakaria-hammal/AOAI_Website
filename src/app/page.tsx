@@ -6,6 +6,7 @@ import { Ambassadors } from "@/components/ambassadors";
 import { Hero } from "@/components/hero";
 import { Title } from "@/components/title";
 import { Footer } from "@/components/footer";
+import { Selection } from "@/components/selection";
 
 export default async function Home() {
   return (
@@ -19,6 +20,10 @@ export default async function Home() {
 
         <section id="events">
           <Events />
+        </section>
+
+        <section id="selection">
+          <Selection />
         </section>
 
         <section id="coaches">
