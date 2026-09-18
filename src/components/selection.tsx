@@ -16,6 +16,9 @@ export function Selection() {
           <p>
             As the season progresses, training increasingly follows the <strong>official IOAI syllabus</strong>, while the expected level of independence, problem-solving ability, and commitment rises at each stage.
           </p>
+          <p>
+            Results for every round are published publicly on the AOAI website and the Discord server.
+          </p>
           <blockquote className="selection-disclaimer">
             Note that dates and scheduling depend on the official school calendar published by the Ministry of National Education and may change accordingly. This outline, including the number of participants progressing at each stage, is subject to change throughout the season.
           </blockquote>
@@ -28,7 +31,7 @@ export function Selection() {
           <div className="phase-card-header">
             <span className="phase-badge">Stage I</span>
             <h3 className="phase-name">AOAI Genesis</h3>
-            <p className="phase-period"><strong>Period:</strong> Mathematics Test — October 3, 2026 · Programming Test — October 10, 2026</p>
+            <p className="phase-period"><strong>Period:</strong> MCQ — October 3, 2026 · Coding Test — October 10, 2026</p>
           </div>
 
           <div className="phase-card-body">
@@ -38,21 +41,20 @@ export function Selection() {
               <div className="info-section">
                 <h4>Eligibility</h4>
                 <ul className="selection-list">
-                  <li>Open to <strong>any Algerian student</strong> who has not yet passed the Baccalaureate exam</li>
-                  <li><strong>No prior AI knowledge required</strong> — every task provides the context needed to solve it</li>
-                  <li>Comfortable working in <strong>VS Code</strong> and <strong>Google Colab</strong>, with solid technical English</li>
+                  <li><strong>Algerian citizenship</strong></li>
+                  <li><strong>Under 19 years old</strong></li>
                 </ul>
-                <p className="note-text">Roughly <strong>50%</strong> of participants advance to AOAI Ascend.</p>
+                <p className="note-text">No separate registration process — taking part in Round 1, which is public and open to everyone, registers you automatically.</p>
               </div>
 
               <div className="info-section">
                 <h4>Format</h4>
                 <ul className="selection-list">
-                  <li>Two separate <strong>5-hour tests</strong>, one week apart, both fully online</li>
-                  <li>Submitted individually through a <strong>Google Form</strong></li>
+                  <li><strong>MCQ</strong> — October 3, 2026, 5 hours, on the Eduspace platform</li>
+                  <li><strong>Coding Test</strong> — October 10, 2026, 5 hours, on the Eduspace platform</li>
                   <li>Completed independently — no help from other participants or outside tools</li>
                 </ul>
-                <p className="note-text">Programming Test solutions are submitted as a Jupyter notebook (<strong>.ipynb</strong>).</p>
+                <p className="note-text">Roughly <strong>50%</strong> of participants advance to AOAI Ascend.</p>
               </div>
             </div>
 
@@ -61,12 +63,12 @@ export function Selection() {
               <p>Each test is built around:</p>
               <div className="curriculum-sub-grid">
                 <div className="curr-item">
-                  <h5>Mathematics Test</h5>
-                  <p>Linear Algebra, Calculus, and Probability &amp; Statistics, extending beyond the standard high-school curriculum. Only a LaTeX cheat sheet is provided.</p>
+                  <h5>Mathematics (MCQ)</h5>
+                  <p>Linear Algebra, Calculus, and Probability &amp; Statistics, extending beyond the standard high-school curriculum — delivered as multiple choice on Eduspace.</p>
                 </div>
                 <div className="curr-item">
-                  <h5>Programming Test</h5>
-                  <p>Python problems drawn from Machine Learning, Computer Vision, and NLP pipelines. Only the official Python documentation is allowed.</p>
+                  <h5>Programming (Coding Test)</h5>
+                  <p>Python problems drawn from Machine Learning, Computer Vision, and NLP pipelines, solved directly on the Eduspace platform.</p>
                 </div>
                 <div className="curr-item">
                   <h5>Prior Knowledge</h5>
@@ -77,7 +79,7 @@ export function Selection() {
 
             <div className="roadmap-download-zone">
               <p>For a full breakdown of preparation resources, download the AOAI Genesis guide:</p>
-              <a href="/aoai-genesis.pdf" download className="download-cta-btn">
+              <a href="/AOAI_Genesis.pdf" download className="download-cta-btn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
                 Download PDF Guide
               </a>
@@ -116,12 +118,12 @@ export function Selection() {
                   <li><strong>Pandas</strong> for data manipulation and analysis</li>
                   <li><strong>Scikit-learn</strong>, <strong>XGBoost</strong>, and <strong>CatBoost</strong> for practical ML models</li>
                 </ul>
-                <p className="note-text">Mathematics is introduced only as needed and is generally not a direct test component at this stage.</p>
               </div>
             </div>
             <div className="selection-rounds-box">
-              <h4>Outcome</h4>
-              <p>Ascend tests practical ML fluency rather than memorized theory. Around <strong>20%</strong> of participants progress to AOAI Vanguard; everyone else keeps access to later-stage material to prepare for next season.</p>
+              <h4>Selection Test</h4>
+              <p>Round 2 combines a <strong>written mathematics test</strong> with a <strong>basic Machine Learning</strong> problem on tabular data.</p>
+              <p className="exam-footer">Around <strong>20%</strong> of participants progress to AOAI Vanguard; everyone else keeps access to later-stage material to prepare for next season.</p>
             </div>
           </div>
         </div>
@@ -155,8 +157,9 @@ export function Selection() {
               </div>
             </div>
             <div className="selection-rounds-box">
-              <h4>Outcome</h4>
-              <p>The <strong>10 strongest participants</strong> at the end of AOAI Vanguard progress to AOAI Apex, the program&apos;s final selection stage.</p>
+              <h4>Selection Test</h4>
+              <p>Round 3 covers <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong> problems.</p>
+              <p className="exam-footer">The <strong>10 strongest participants</strong> progress to AOAI Apex, the program&apos;s final selection stage.</p>
             </div>
           </div>
         </div>
@@ -190,7 +193,8 @@ export function Selection() {
             </div>
             <div className="tst-final-info">
               <h4>Final Team Selection Test</h4>
-              <p>Ten participants compete in the Final Team Selection Test, which mirrors real IOAI conditions — analyzing unfamiliar problems, using available tools and models effectively, managing time, and debugging under pressure.</p>
+              <p>Round 4 draws on <strong>the entire IOAI syllabus</strong> — any topic covered so far is fair game. Ten participants compete under conditions that mirror the real IOAI: analyzing unfamiliar problems, using available tools and models effectively, managing time, and debugging under pressure.</p>
+              <p className="exam-footer">The top <strong>4 scorers</strong> form the Algerian team. If a selected student is unable or unwilling to take part, their spot goes to the next-highest scorer as a reserve.</p>
               <div className="final-selection-statement">
                 Four participants are selected to form the Algerian team for the season.
               </div>
